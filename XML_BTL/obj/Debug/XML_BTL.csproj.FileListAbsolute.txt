@@ -1,0 +1,10 @@
+C:\Học Tập\XML\XML_BTL\XML_BTL\bin\Debug\XML_BTL.exe.config
+C:\Học Tập\XML\XML_BTL\XML_BTL\bin\Debug\XML_BTL.exe
+C:\Học Tập\XML\XML_BTL\XML_BTL\bin\Debug\XML_BTL.pdb
+C:\Học Tập\XML\XML_BTL\XML_BTL\obj\Debug\XML_BTL.csproj.AssemblyReference.cache
+C:\Học Tập\XML\XML_BTL\XML_BTL\obj\Debug\XML_BTL.Form2.resources
+C:\Học Tập\XML\XML_BTL\XML_BTL\obj\Debug\XML_BTL.Properties.Resources.resources
+C:\Học Tập\XML\XML_BTL\XML_BTL\obj\Debug\XML_BTL.csproj.GenerateResource.cache
+C:\Học Tập\XML\XML_BTL\XML_BTL\obj\Debug\XML_BTL.csproj.CoreCompileInputs.cache
+C:\Học Tập\XML\XML_BTL\XML_BTL\obj\Debug\XML_BTL.exe
+C:\Học Tập\XML\XML_BTL\XML_BTL\obj\Debug\XML_BTL.pdb
