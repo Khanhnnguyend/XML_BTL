@@ -8,3 +8,6 @@ C:\Học Tập\XML\XML_BTL\XML_BTL\obj\Debug\XML_BTL.csproj.GenerateResource.cac
 C:\Học Tập\XML\XML_BTL\XML_BTL\obj\Debug\XML_BTL.csproj.CoreCompileInputs.cache
 C:\Học Tập\XML\XML_BTL\XML_BTL\obj\Debug\XML_BTL.exe
 C:\Học Tập\XML\XML_BTL\XML_BTL\obj\Debug\XML_BTL.pdb
+C:\Học Tập\XML\XML_BTL\XML_BTL\obj\Debug\XML_BTL.Form1.resources
+C:\Học Tập\XML\XML_BTL\XML_BTL\bin\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+C:\Học Tập\XML\XML_BTL\XML_BTL\obj\Debug\XML_BTL.csproj.CopyComplete

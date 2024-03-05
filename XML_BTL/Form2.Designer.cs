@@ -79,6 +79,7 @@
             // 
             // btn_dangnhap
             // 
+            this.btn_dangnhap.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btn_dangnhap.Location = new System.Drawing.Point(340, 281);
             this.btn_dangnhap.Name = "btn_dangnhap";
             this.btn_dangnhap.Size = new System.Drawing.Size(75, 23);
@@ -100,7 +101,6 @@
             this.Controls.Add(this.lbTk);
             this.Name = "Form2";
             this.Text = "Form2";
-            this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
 
