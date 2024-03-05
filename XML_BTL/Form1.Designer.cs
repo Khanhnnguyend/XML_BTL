@@ -35,7 +35,22 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.btnThemKH = new System.Windows.Forms.Button();
+            this.btnSuaKH = new System.Windows.Forms.Button();
+            this.btnXoaKH = new System.Windows.Forms.Button();
+            this.btnTimKiemKH = new System.Windows.Forms.Button();
+            this.dataGridViewKH = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtMaKhach = new System.Windows.Forms.TextBox();
+            this.txtTenKH = new System.Windows.Forms.TextBox();
+            this.txtSDT = new System.Windows.Forms.TextBox();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKH)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -70,7 +85,6 @@
             this.tabPage1.Size = new System.Drawing.Size(829, 418);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Nhập hóa đơn";
-         
             // 
             // tabPage2
             // 
@@ -96,6 +110,19 @@
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.tabPage4.Controls.Add(this.txtDiaChi);
+            this.tabPage4.Controls.Add(this.txtSDT);
+            this.tabPage4.Controls.Add(this.txtTenKH);
+            this.tabPage4.Controls.Add(this.txtMaKhach);
+            this.tabPage4.Controls.Add(this.label4);
+            this.tabPage4.Controls.Add(this.label3);
+            this.tabPage4.Controls.Add(this.label2);
+            this.tabPage4.Controls.Add(this.label1);
+            this.tabPage4.Controls.Add(this.dataGridViewKH);
+            this.tabPage4.Controls.Add(this.btnTimKiemKH);
+            this.tabPage4.Controls.Add(this.btnXoaKH);
+            this.tabPage4.Controls.Add(this.btnSuaKH);
+            this.tabPage4.Controls.Add(this.btnThemKH);
             this.tabPage4.Location = new System.Drawing.Point(4, 28);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
@@ -123,6 +150,116 @@
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Báo cáo thống kê";
             // 
+            // btnThemKH
+            // 
+            this.btnThemKH.Location = new System.Drawing.Point(42, 29);
+            this.btnThemKH.Name = "btnThemKH";
+            this.btnThemKH.Size = new System.Drawing.Size(95, 36);
+            this.btnThemKH.TabIndex = 0;
+            this.btnThemKH.Text = "Thêm";
+            this.btnThemKH.UseVisualStyleBackColor = true;
+            // 
+            // btnSuaKH
+            // 
+            this.btnSuaKH.Location = new System.Drawing.Point(42, 86);
+            this.btnSuaKH.Name = "btnSuaKH";
+            this.btnSuaKH.Size = new System.Drawing.Size(95, 32);
+            this.btnSuaKH.TabIndex = 1;
+            this.btnSuaKH.Text = "Sửa";
+            this.btnSuaKH.UseVisualStyleBackColor = true;
+            // 
+            // btnXoaKH
+            // 
+            this.btnXoaKH.Location = new System.Drawing.Point(42, 142);
+            this.btnXoaKH.Name = "btnXoaKH";
+            this.btnXoaKH.Size = new System.Drawing.Size(95, 33);
+            this.btnXoaKH.TabIndex = 2;
+            this.btnXoaKH.Text = "Xóa";
+            this.btnXoaKH.UseVisualStyleBackColor = true;
+            // 
+            // btnTimKiemKH
+            // 
+            this.btnTimKiemKH.Location = new System.Drawing.Point(42, 198);
+            this.btnTimKiemKH.Name = "btnTimKiemKH";
+            this.btnTimKiemKH.Size = new System.Drawing.Size(95, 32);
+            this.btnTimKiemKH.TabIndex = 3;
+            this.btnTimKiemKH.Text = "Tìm kiếm";
+            this.btnTimKiemKH.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewKH
+            // 
+            this.dataGridViewKH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewKH.Location = new System.Drawing.Point(172, 29);
+            this.dataGridViewKH.Name = "dataGridViewKH";
+            this.dataGridViewKH.RowHeadersWidth = 51;
+            this.dataGridViewKH.RowTemplate.Height = 24;
+            this.dataGridViewKH.Size = new System.Drawing.Size(632, 201);
+            this.dataGridViewKH.TabIndex = 4;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(169, 269);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(111, 16);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Mã khách hàng";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(169, 304);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(117, 16);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Tên khách hàng";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(169, 338);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(98, 16);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Số điện thoại";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(169, 370);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(54, 16);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Địa chỉ";
+            // 
+            // txtMaKhach
+            // 
+            this.txtMaKhach.Location = new System.Drawing.Point(306, 269);
+            this.txtMaKhach.Name = "txtMaKhach";
+            this.txtMaKhach.Size = new System.Drawing.Size(172, 22);
+            this.txtMaKhach.TabIndex = 9;
+            // 
+            // txtTenKH
+            // 
+            this.txtTenKH.Location = new System.Drawing.Point(306, 304);
+            this.txtTenKH.Name = "txtTenKH";
+            this.txtTenKH.Size = new System.Drawing.Size(172, 22);
+            this.txtTenKH.TabIndex = 10;
+            // 
+            // txtSDT
+            // 
+            this.txtSDT.Location = new System.Drawing.Point(306, 338);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(172, 22);
+            this.txtSDT.TabIndex = 11;
+            // 
+            // txtDiaChi
+            // 
+            this.txtDiaChi.Location = new System.Drawing.Point(306, 370);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(172, 22);
+            this.txtDiaChi.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -132,6 +269,9 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.tabControl1.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKH)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -145,5 +285,18 @@
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.Button btnThemKH;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dataGridViewKH;
+        private System.Windows.Forms.Button btnTimKiemKH;
+        private System.Windows.Forms.Button btnXoaKH;
+        private System.Windows.Forms.Button btnSuaKH;
+        private System.Windows.Forms.TextBox txtDiaChi;
+        private System.Windows.Forms.TextBox txtSDT;
+        private System.Windows.Forms.TextBox txtTenKH;
+        private System.Windows.Forms.TextBox txtMaKhach;
     }
 }
