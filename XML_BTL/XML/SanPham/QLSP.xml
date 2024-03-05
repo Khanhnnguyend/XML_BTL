@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE QLSP[
+	<!ELEMENT QLSP (SanPham*)>
+	<!ELEMENT SanPham (TenHang, SoLuong, DonGia)>
+	<!ATTLIST SanPham MaHang ID #REQUIRED>
+	<!ELEMENT TenHang (#PCDATA)>
+	<!ELEMENT SoLuong (#PCDATA)>
+	<!ELEMENT DonGia (#PCDATA)>
+]>
+<QLSP>
+	<SanPham MaHang="SP01">
+		<TenHang>BimBim</TenHang>
+		<SoLuong>2</SoLuong>
+		<DonGia>10000</DonGia>
+	</SanPham>
+</QLSP>
