@@ -31,35 +31,35 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.dgv = new System.Windows.Forms.DataGridView();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
-            this.btnThem = new System.Windows.Forms.Button();
-            this.edtDonGia = new System.Windows.Forms.TextBox();
+            this.QLSPdgv = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QLSPgroupBox2 = new System.Windows.Forms.GroupBox();
+            this.QLSPbtnTimKiem = new System.Windows.Forms.Button();
+            this.QLSPedtTimKiem = new System.Windows.Forms.TextBox();
+            this.QLSPgroupBox1 = new System.Windows.Forms.GroupBox();
+            this.QLSPbtnXoa = new System.Windows.Forms.Button();
+            this.QLSPbtnSua = new System.Windows.Forms.Button();
+            this.QLSPbtnThem = new System.Windows.Forms.Button();
+            this.QLSPedtDonGia = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.edtSoLuong = new System.Windows.Forms.TextBox();
+            this.QLSPedtSoLuong = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.edtTenHang = new System.Windows.Forms.TextBox();
+            this.QLSPedtTenHang = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.edtMaHang = new System.Windows.Forms.TextBox();
+            this.QLSPedtMaHang = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.edtTimKiem = new System.Windows.Forms.TextBox();
-            this.btnTimKiem = new System.Windows.Forms.Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.QLSPdgv)).BeginInit();
+            this.QLSPgroupBox2.SuspendLayout();
+            this.QLSPgroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -98,9 +98,9 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.tabPage2.Controls.Add(this.dgv);
-            this.tabPage2.Controls.Add(this.groupBox2);
-            this.tabPage2.Controls.Add(this.groupBox1);
+            this.tabPage2.Controls.Add(this.QLSPdgv);
+            this.tabPage2.Controls.Add(this.QLSPgroupBox2);
+            this.tabPage2.Controls.Add(this.QLSPgroupBox1);
             this.tabPage2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tabPage2.Location = new System.Drawing.Point(4, 28);
             this.tabPage2.Name = "tabPage2";
@@ -108,87 +108,133 @@
             this.tabPage2.Size = new System.Drawing.Size(829, 418);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Quản lý sản phẩm";
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
-            // dgv
+            // QLSPdgv
             // 
-            this.dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.QLSPdgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.QLSPdgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.QLSPdgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dgv.Location = new System.Drawing.Point(34, 177);
-            this.dgv.Name = "dgv";
-            this.dgv.RowHeadersWidth = 51;
-            this.dgv.RowTemplate.Height = 24;
-            this.dgv.Size = new System.Drawing.Size(761, 224);
-            this.dgv.TabIndex = 2;
+            this.QLSPdgv.Location = new System.Drawing.Point(34, 177);
+            this.QLSPdgv.Name = "QLSPdgv";
+            this.QLSPdgv.RowHeadersWidth = 51;
+            this.QLSPdgv.RowTemplate.Height = 24;
+            this.QLSPdgv.Size = new System.Drawing.Size(761, 224);
+            this.QLSPdgv.TabIndex = 2;
+            this.QLSPdgv.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.QLSPdgv_CellMouseDoubleClick);
             // 
-            // groupBox2
+            // Column1
             // 
-            this.groupBox2.Controls.Add(this.btnTimKiem);
-            this.groupBox2.Controls.Add(this.edtTimKiem);
-            this.groupBox2.Location = new System.Drawing.Point(468, 23);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(327, 90);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Tìm kiếm sản phẩm";
+            this.Column1.HeaderText = "Mã hàng";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
             // 
-            // groupBox1
+            // Column2
             // 
-            this.groupBox1.Controls.Add(this.btnXoa);
-            this.groupBox1.Controls.Add(this.btnSua);
-            this.groupBox1.Controls.Add(this.btnThem);
-            this.groupBox1.Controls.Add(this.edtDonGia);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.edtSoLuong);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.edtTenHang);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.edtMaHang);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(34, 23);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(384, 148);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông tin sản phẩm";
+            this.Column2.HeaderText = "Tên hàng";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
             // 
-            // btnXoa
+            // Column3
             // 
-            this.btnXoa.Location = new System.Drawing.Point(291, 113);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(75, 23);
-            this.btnXoa.TabIndex = 10;
-            this.btnXoa.Text = "Xoá";
-            this.btnXoa.UseVisualStyleBackColor = true;
+            this.Column3.HeaderText = "Số lượng";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
             // 
-            // btnSua
+            // Column4
             // 
-            this.btnSua.Location = new System.Drawing.Point(291, 71);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(75, 23);
-            this.btnSua.TabIndex = 9;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
+            this.Column4.HeaderText = "Đơn giá";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
             // 
-            // btnThem
+            // QLSPgroupBox2
             // 
-            this.btnThem.Location = new System.Drawing.Point(291, 29);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(75, 23);
-            this.btnThem.TabIndex = 8;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.UseVisualStyleBackColor = true;
+            this.QLSPgroupBox2.Controls.Add(this.QLSPbtnTimKiem);
+            this.QLSPgroupBox2.Controls.Add(this.QLSPedtTimKiem);
+            this.QLSPgroupBox2.Location = new System.Drawing.Point(468, 23);
+            this.QLSPgroupBox2.Name = "QLSPgroupBox2";
+            this.QLSPgroupBox2.Size = new System.Drawing.Size(327, 90);
+            this.QLSPgroupBox2.TabIndex = 1;
+            this.QLSPgroupBox2.TabStop = false;
+            this.QLSPgroupBox2.Text = "Tìm kiếm sản phẩm";
             // 
-            // edtDonGia
+            // QLSPbtnTimKiem
             // 
-            this.edtDonGia.Location = new System.Drawing.Point(107, 114);
-            this.edtDonGia.Name = "edtDonGia";
-            this.edtDonGia.Size = new System.Drawing.Size(165, 22);
-            this.edtDonGia.TabIndex = 7;
+            this.QLSPbtnTimKiem.Location = new System.Drawing.Point(121, 61);
+            this.QLSPbtnTimKiem.Name = "QLSPbtnTimKiem";
+            this.QLSPbtnTimKiem.Size = new System.Drawing.Size(88, 23);
+            this.QLSPbtnTimKiem.TabIndex = 1;
+            this.QLSPbtnTimKiem.Text = "Tìm kiếm";
+            this.QLSPbtnTimKiem.UseVisualStyleBackColor = true;
+            this.QLSPbtnTimKiem.Click += new System.EventHandler(this.QLSPbtnTimKiem_Click);
+            // 
+            // QLSPedtTimKiem
+            // 
+            this.QLSPedtTimKiem.Location = new System.Drawing.Point(40, 29);
+            this.QLSPedtTimKiem.Name = "QLSPedtTimKiem";
+            this.QLSPedtTimKiem.Size = new System.Drawing.Size(249, 22);
+            this.QLSPedtTimKiem.TabIndex = 0;
+            // 
+            // QLSPgroupBox1
+            // 
+            this.QLSPgroupBox1.Controls.Add(this.QLSPbtnXoa);
+            this.QLSPgroupBox1.Controls.Add(this.QLSPbtnSua);
+            this.QLSPgroupBox1.Controls.Add(this.QLSPbtnThem);
+            this.QLSPgroupBox1.Controls.Add(this.QLSPedtDonGia);
+            this.QLSPgroupBox1.Controls.Add(this.label4);
+            this.QLSPgroupBox1.Controls.Add(this.QLSPedtSoLuong);
+            this.QLSPgroupBox1.Controls.Add(this.label3);
+            this.QLSPgroupBox1.Controls.Add(this.QLSPedtTenHang);
+            this.QLSPgroupBox1.Controls.Add(this.label2);
+            this.QLSPgroupBox1.Controls.Add(this.QLSPedtMaHang);
+            this.QLSPgroupBox1.Controls.Add(this.label1);
+            this.QLSPgroupBox1.Location = new System.Drawing.Point(34, 23);
+            this.QLSPgroupBox1.Name = "QLSPgroupBox1";
+            this.QLSPgroupBox1.Size = new System.Drawing.Size(384, 148);
+            this.QLSPgroupBox1.TabIndex = 0;
+            this.QLSPgroupBox1.TabStop = false;
+            this.QLSPgroupBox1.Text = "Thông tin sản phẩm";
+            // 
+            // QLSPbtnXoa
+            // 
+            this.QLSPbtnXoa.Location = new System.Drawing.Point(291, 113);
+            this.QLSPbtnXoa.Name = "QLSPbtnXoa";
+            this.QLSPbtnXoa.Size = new System.Drawing.Size(75, 23);
+            this.QLSPbtnXoa.TabIndex = 10;
+            this.QLSPbtnXoa.Text = "Xoá";
+            this.QLSPbtnXoa.UseVisualStyleBackColor = true;
+            this.QLSPbtnXoa.Click += new System.EventHandler(this.QLSPbtnXoa_Click);
+            // 
+            // QLSPbtnSua
+            // 
+            this.QLSPbtnSua.Location = new System.Drawing.Point(291, 71);
+            this.QLSPbtnSua.Name = "QLSPbtnSua";
+            this.QLSPbtnSua.Size = new System.Drawing.Size(75, 23);
+            this.QLSPbtnSua.TabIndex = 9;
+            this.QLSPbtnSua.Text = "Sửa";
+            this.QLSPbtnSua.UseVisualStyleBackColor = true;
+            this.QLSPbtnSua.Click += new System.EventHandler(this.QLSPbtnSua_Click);
+            // 
+            // QLSPbtnThem
+            // 
+            this.QLSPbtnThem.Location = new System.Drawing.Point(291, 29);
+            this.QLSPbtnThem.Name = "QLSPbtnThem";
+            this.QLSPbtnThem.Size = new System.Drawing.Size(75, 23);
+            this.QLSPbtnThem.TabIndex = 8;
+            this.QLSPbtnThem.Text = "Thêm";
+            this.QLSPbtnThem.UseVisualStyleBackColor = true;
+            this.QLSPbtnThem.Click += new System.EventHandler(this.QLSPbtnThem_Click);
+            // 
+            // QLSPedtDonGia
+            // 
+            this.QLSPedtDonGia.Location = new System.Drawing.Point(107, 114);
+            this.QLSPedtDonGia.Name = "QLSPedtDonGia";
+            this.QLSPedtDonGia.Size = new System.Drawing.Size(165, 22);
+            this.QLSPedtDonGia.TabIndex = 7;
             // 
             // label4
             // 
@@ -199,12 +245,12 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Đơn giá:";
             // 
-            // edtSoLuong
+            // QLSPedtSoLuong
             // 
-            this.edtSoLuong.Location = new System.Drawing.Point(107, 86);
-            this.edtSoLuong.Name = "edtSoLuong";
-            this.edtSoLuong.Size = new System.Drawing.Size(165, 22);
-            this.edtSoLuong.TabIndex = 5;
+            this.QLSPedtSoLuong.Location = new System.Drawing.Point(107, 86);
+            this.QLSPedtSoLuong.Name = "QLSPedtSoLuong";
+            this.QLSPedtSoLuong.Size = new System.Drawing.Size(165, 22);
+            this.QLSPedtSoLuong.TabIndex = 5;
             // 
             // label3
             // 
@@ -215,12 +261,12 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Số lượng:";
             // 
-            // edtTenHang
+            // QLSPedtTenHang
             // 
-            this.edtTenHang.Location = new System.Drawing.Point(107, 58);
-            this.edtTenHang.Name = "edtTenHang";
-            this.edtTenHang.Size = new System.Drawing.Size(165, 22);
-            this.edtTenHang.TabIndex = 3;
+            this.QLSPedtTenHang.Location = new System.Drawing.Point(107, 58);
+            this.QLSPedtTenHang.Name = "QLSPedtTenHang";
+            this.QLSPedtTenHang.Size = new System.Drawing.Size(165, 22);
+            this.QLSPedtTenHang.TabIndex = 3;
             // 
             // label2
             // 
@@ -231,12 +277,12 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Tên hàng:";
             // 
-            // edtMaHang
+            // QLSPedtMaHang
             // 
-            this.edtMaHang.Location = new System.Drawing.Point(107, 30);
-            this.edtMaHang.Name = "edtMaHang";
-            this.edtMaHang.Size = new System.Drawing.Size(165, 22);
-            this.edtMaHang.TabIndex = 1;
+            this.QLSPedtMaHang.Location = new System.Drawing.Point(107, 30);
+            this.QLSPedtMaHang.Name = "QLSPedtMaHang";
+            this.QLSPedtMaHang.Size = new System.Drawing.Size(165, 22);
+            this.QLSPedtMaHang.TabIndex = 1;
             // 
             // label1
             // 
@@ -287,46 +333,6 @@
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Báo cáo thống kê";
             // 
-            // edtTimKiem
-            // 
-            this.edtTimKiem.Location = new System.Drawing.Point(40, 29);
-            this.edtTimKiem.Name = "edtTimKiem";
-            this.edtTimKiem.Size = new System.Drawing.Size(249, 22);
-            this.edtTimKiem.TabIndex = 0;
-            // 
-            // btnTimKiem
-            // 
-            this.btnTimKiem.Location = new System.Drawing.Point(121, 61);
-            this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(88, 23);
-            this.btnTimKiem.TabIndex = 1;
-            this.btnTimKiem.Text = "Tìm kiếm";
-            this.btnTimKiem.UseVisualStyleBackColor = true;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Mã hàng";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Tên hàng";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Số lượng";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Đơn giá";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -337,11 +343,11 @@
             this.Text = "Form1";
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.QLSPdgv)).EndInit();
+            this.QLSPgroupBox2.ResumeLayout(false);
+            this.QLSPgroupBox2.PerformLayout();
+            this.QLSPgroupBox1.ResumeLayout(false);
+            this.QLSPgroupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -355,22 +361,22 @@
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage6;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DataGridView dgv;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btnSua;
-        private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.TextBox edtDonGia;
+        private System.Windows.Forms.GroupBox QLSPgroupBox1;
+        private System.Windows.Forms.DataGridView QLSPdgv;
+        private System.Windows.Forms.GroupBox QLSPgroupBox2;
+        private System.Windows.Forms.Button QLSPbtnXoa;
+        private System.Windows.Forms.Button QLSPbtnSua;
+        private System.Windows.Forms.Button QLSPbtnThem;
+        private System.Windows.Forms.TextBox QLSPedtDonGia;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox edtSoLuong;
+        private System.Windows.Forms.TextBox QLSPedtSoLuong;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox edtTenHang;
+        private System.Windows.Forms.TextBox QLSPedtTenHang;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox edtMaHang;
+        private System.Windows.Forms.TextBox QLSPedtMaHang;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnTimKiem;
-        private System.Windows.Forms.TextBox edtTimKiem;
+        private System.Windows.Forms.Button QLSPbtnTimKiem;
+        private System.Windows.Forms.TextBox QLSPedtTimKiem;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
