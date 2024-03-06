@@ -93,5 +93,10 @@ namespace XML_BTL
             // Lưu thay đổi vào tệp XML
             xmlDoc.Save(filePath);
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

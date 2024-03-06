@@ -28,37 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lb_taikhoan = new System.Windows.Forms.Label();
+            this.lb_matkhau = new System.Windows.Forms.Label();
             this.txtTaiKhoan = new System.Windows.Forms.TextBox();
             this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.btnTaiKhoan = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lb_dangnhap1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label2
+            // lb_taikhoan
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(136, 150);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 22);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Tài Khoản";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.lb_taikhoan.AutoSize = true;
+            this.lb_taikhoan.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lb_taikhoan.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_taikhoan.Location = new System.Drawing.Point(136, 150);
+            this.lb_taikhoan.Name = "lb_taikhoan";
+            this.lb_taikhoan.Size = new System.Drawing.Size(93, 22);
+            this.lb_taikhoan.TabIndex = 1;
+            this.lb_taikhoan.Text = "Tài Khoản";
+            this.lb_taikhoan.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label3
+            // lb_matkhau
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(136, 215);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 22);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Mật Khẩu";
+            this.lb_matkhau.AutoSize = true;
+            this.lb_matkhau.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lb_matkhau.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_matkhau.Location = new System.Drawing.Point(136, 215);
+            this.lb_matkhau.Name = "lb_matkhau";
+            this.lb_matkhau.Size = new System.Drawing.Size(87, 22);
+            this.lb_matkhau.TabIndex = 2;
+            this.lb_matkhau.Text = "Mật Khẩu";
             // 
             // txtTaiKhoan
             // 
@@ -84,15 +84,15 @@
             this.btnTaiKhoan.UseVisualStyleBackColor = true;
             this.btnTaiKhoan.Click += new System.EventHandler(this.btnTaiKhoan_Click);
             // 
-            // label1
+            // lb_dangnhap1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(283, 56);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(192, 34);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "ĐĂNG NHẬP";
+            this.lb_dangnhap1.AutoSize = true;
+            this.lb_dangnhap1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_dangnhap1.Location = new System.Drawing.Point(283, 56);
+            this.lb_dangnhap1.Name = "lb_dangnhap1";
+            this.lb_dangnhap1.Size = new System.Drawing.Size(192, 34);
+            this.lb_dangnhap1.TabIndex = 6;
+            this.lb_dangnhap1.Text = "ĐĂNG NHẬP";
             // 
             // button1
             // 
@@ -111,12 +111,12 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(691, 418);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lb_dangnhap1);
             this.Controls.Add(this.btnTaiKhoan);
             this.Controls.Add(this.txtMatKhau);
             this.Controls.Add(this.txtTaiKhoan);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lb_matkhau);
+            this.Controls.Add(this.lb_taikhoan);
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
@@ -126,12 +126,12 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lb_taikhoan;
+        private System.Windows.Forms.Label lb_matkhau;
         private System.Windows.Forms.TextBox txtTaiKhoan;
         private System.Windows.Forms.TextBox txtMatKhau;
         private System.Windows.Forms.Button btnTaiKhoan;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lb_dangnhap1;
         private System.Windows.Forms.Button button1;
     }
 }

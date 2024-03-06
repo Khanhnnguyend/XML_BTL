@@ -28,55 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lb_dangki = new System.Windows.Forms.Label();
+            this.lb_nhaptaikhoan = new System.Windows.Forms.Label();
+            this.lb_nhapmatkhau = new System.Windows.Forms.Label();
+            this.lb_xacnhanmatkhau = new System.Windows.Forms.Label();
             this.txtThemTK = new System.Windows.Forms.TextBox();
             this.txtThemMK = new System.Windows.Forms.TextBox();
             this.txtXacNhanMK = new System.Windows.Forms.TextBox();
             this.btnXacNhan = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lb_dangki
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(326, 52);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 39);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ĐĂNG KÍ";
+            this.lb_dangki.AutoSize = true;
+            this.lb_dangki.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_dangki.Location = new System.Drawing.Point(326, 52);
+            this.lb_dangki.Name = "lb_dangki";
+            this.lb_dangki.Size = new System.Drawing.Size(154, 37);
+            this.lb_dangki.TabIndex = 0;
+            this.lb_dangki.Text = "ĐĂNG KÍ";
+            this.lb_dangki.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // lb_nhaptaikhoan
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(200, 142);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 22);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nhập tài khoản";
+            this.lb_nhaptaikhoan.AutoSize = true;
+            this.lb_nhaptaikhoan.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_nhaptaikhoan.Location = new System.Drawing.Point(200, 142);
+            this.lb_nhaptaikhoan.Name = "lb_nhaptaikhoan";
+            this.lb_nhaptaikhoan.Size = new System.Drawing.Size(128, 22);
+            this.lb_nhaptaikhoan.TabIndex = 1;
+            this.lb_nhaptaikhoan.Text = "Nhập tài khoản";
             // 
-            // label3
+            // lb_nhapmatkhau
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(200, 189);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(126, 22);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Nhập mật khẩu";
+            this.lb_nhapmatkhau.AutoSize = true;
+            this.lb_nhapmatkhau.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_nhapmatkhau.Location = new System.Drawing.Point(200, 189);
+            this.lb_nhapmatkhau.Name = "lb_nhapmatkhau";
+            this.lb_nhapmatkhau.Size = new System.Drawing.Size(126, 22);
+            this.lb_nhapmatkhau.TabIndex = 2;
+            this.lb_nhapmatkhau.Text = "Nhập mật khẩu";
             // 
-            // label4
+            // lb_xacnhanmatkhau
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(200, 235);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(157, 22);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Xác nhận mật khẩu";
+            this.lb_xacnhanmatkhau.AutoSize = true;
+            this.lb_xacnhanmatkhau.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_xacnhanmatkhau.Location = new System.Drawing.Point(200, 235);
+            this.lb_xacnhanmatkhau.Name = "lb_xacnhanmatkhau";
+            this.lb_xacnhanmatkhau.Size = new System.Drawing.Size(157, 22);
+            this.lb_xacnhanmatkhau.TabIndex = 3;
+            this.lb_xacnhanmatkhau.Text = "Xác nhận mật khẩu";
             // 
             // txtThemTK
             // 
@@ -119,10 +120,10 @@
             this.Controls.Add(this.txtXacNhanMK);
             this.Controls.Add(this.txtThemMK);
             this.Controls.Add(this.txtThemTK);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lb_xacnhanmatkhau);
+            this.Controls.Add(this.lb_nhapmatkhau);
+            this.Controls.Add(this.lb_nhaptaikhoan);
+            this.Controls.Add(this.lb_dangki);
             this.Name = "Form3";
             this.Text = "Form3";
             this.ResumeLayout(false);
@@ -132,10 +133,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lb_dangki;
+        private System.Windows.Forms.Label lb_nhaptaikhoan;
+        private System.Windows.Forms.Label lb_nhapmatkhau;
+        private System.Windows.Forms.Label lb_xacnhanmatkhau;
         private System.Windows.Forms.TextBox txtThemTK;
         private System.Windows.Forms.TextBox txtThemMK;
         private System.Windows.Forms.TextBox txtXacNhanMK;
