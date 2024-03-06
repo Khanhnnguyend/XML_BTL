@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE DS_hoadon[
+	<!ELEMENT DS_hoadon (hoadon*)>
+	<!ELEMENT hoadon (khachhang, sanpham*)>
+	<!ELEMENT khachhang ( hoten,sdt, diachi)>
+	<!ELEMENT hoten (#PCDATA)>
+	<!ELEMENT diachi (#PCDATA)>
+	<!ELEMENT sdt (#PCDATA)>
+
+	<!ELEMENT sanpham (tenhang, soluong, dongia)>
+	<!ELEMENT tenhang (#PCDATA)>
+	<!ELEMENT soluong (#PCDATA)>
+	<!ELEMENT dongia (#PCDATA)>
+
+
+	<!ATTLIST khachhang makh ID #REQUIRED>
+	<!ATTLIST sanpham masp ID #REQUIRED>
+	<!ATTLIST hoadon mahd ID #REQUIRED>
+]>
+<DS_hoadon>
+	<hoadon mahd="hd01">
+		<khachhang makh="kh01">
+			<hoten>nguyen van a</hoten>
+			<sdt></sdt>
+			<diachi></diachi>
+		</khachhang>
+		<sanpham masp="sp01">
+			<tenhang></tenhang>
+			<soluong></soluong>
+			<dongia></dongia>
+		</sanpham>
+		<sanpham masp="sp02">
+			<tenhang></tenhang>
+			<soluong></soluong>
+			<dongia></dongia>
+		</sanpham>
+	</hoadon>
+
+	<hoadon mahd="hd01">
+		<khachhang makh="kh01">
+			<hoten>nguyen van a</hoten>
+			<sdt>09123142354</sdt>
+			<diachi>thai nguyen</diachi>
+		</khachhang>
+		<sanpham masp="sp01">
+			<tenhang>keo mika</tenhang>
+			<soluong>10</soluong>
+			<dongia>20000</dongia>
+		</sanpham>
+		<sanpham masp="sp02">
+			<tenhang>banh c</tenhang>
+			<soluong>3</soluong>
+			<dongia>45000</dongia>
+		</sanpham>
+	</hoadon>
+
+	<hoadon mahd="hd02">
+		<khachhang makh="kh01">
+			<hoten>nguyen van a</hoten>
+			<sdt>09123142354</sdt>
+			<diachi>thai nguyen</diachi>
+		</khachhang>
+		<sanpham masp="sp01">
+			<tenhang>keo mika</tenhang>
+			<soluong>10</soluong>
+			<dongia>20000</dongia>
+		</sanpham>
+		<sanpham masp="sp02">
+			<tenhang>banh c</tenhang>
+			<soluong>3</soluong>
+			<dongia>45000</dongia>
+		</sanpham>
+	</hoadon>
+
+	<hoadon mahd="hd03">
+		<khachhang makh="kh01">
+			<hoten>nguyen van a</hoten>
+			<sdt>09123142354</sdt>
+			<diachi>thai nguyen</diachi>
+		</khachhang>
+		<sanpham masp="sp01">
+			<tenhang>keo mika</tenhang>
+			<soluong>10</soluong>
+			<dongia>20000</dongia>
+		</sanpham>
+		<sanpham masp="sp02">
+			<tenhang>banh c</tenhang>
+			<soluong>3</soluong>
+			<dongia>45000</dongia>
+		</sanpham>
+	</hoadon>
+	
+	
+</DS_hoadon>
