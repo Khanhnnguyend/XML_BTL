@@ -152,9 +152,9 @@ namespace XML_BTL
                 root_nv.RemoveChild(nhanvien);
                 MessageBox.Show("Xoa thanh cong");
             }
-            else {
+            else{
                 MessageBox.Show("Khong tim thay");
             }
         }
     }
-
+}
