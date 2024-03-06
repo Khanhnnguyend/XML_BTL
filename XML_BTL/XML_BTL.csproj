@@ -107,6 +107,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="qlnv.dtd" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -124,7 +125,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="XMLFile1.xml" />
+    <Content Include="QLnhanvien.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
