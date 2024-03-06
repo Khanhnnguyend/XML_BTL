@@ -44,13 +44,13 @@
             this.QLSPbtnSua = new System.Windows.Forms.Button();
             this.QLSPbtnThem = new System.Windows.Forms.Button();
             this.QLSPedtDonGia = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.QLSPlabel4 = new System.Windows.Forms.Label();
             this.QLSPedtSoLuong = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.QLSPlabel3 = new System.Windows.Forms.Label();
             this.QLSPedtTenHang = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.QLSPlabel2 = new System.Windows.Forms.Label();
             this.QLSPedtMaHang = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.QLSPlabel1 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
@@ -185,13 +185,13 @@
             this.QLSPgroupBox1.Controls.Add(this.QLSPbtnSua);
             this.QLSPgroupBox1.Controls.Add(this.QLSPbtnThem);
             this.QLSPgroupBox1.Controls.Add(this.QLSPedtDonGia);
-            this.QLSPgroupBox1.Controls.Add(this.label4);
+            this.QLSPgroupBox1.Controls.Add(this.QLSPlabel4);
             this.QLSPgroupBox1.Controls.Add(this.QLSPedtSoLuong);
-            this.QLSPgroupBox1.Controls.Add(this.label3);
+            this.QLSPgroupBox1.Controls.Add(this.QLSPlabel3);
             this.QLSPgroupBox1.Controls.Add(this.QLSPedtTenHang);
-            this.QLSPgroupBox1.Controls.Add(this.label2);
+            this.QLSPgroupBox1.Controls.Add(this.QLSPlabel2);
             this.QLSPgroupBox1.Controls.Add(this.QLSPedtMaHang);
-            this.QLSPgroupBox1.Controls.Add(this.label1);
+            this.QLSPgroupBox1.Controls.Add(this.QLSPlabel1);
             this.QLSPgroupBox1.Location = new System.Drawing.Point(34, 23);
             this.QLSPgroupBox1.Name = "QLSPgroupBox1";
             this.QLSPgroupBox1.Size = new System.Drawing.Size(384, 148);
@@ -236,14 +236,14 @@
             this.QLSPedtDonGia.Size = new System.Drawing.Size(165, 22);
             this.QLSPedtDonGia.TabIndex = 7;
             // 
-            // label4
+            // QLSPlabel4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(21, 117);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 16);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Đơn giá:";
+            this.QLSPlabel4.AutoSize = true;
+            this.QLSPlabel4.Location = new System.Drawing.Point(21, 117);
+            this.QLSPlabel4.Name = "QLSPlabel4";
+            this.QLSPlabel4.Size = new System.Drawing.Size(64, 16);
+            this.QLSPlabel4.TabIndex = 6;
+            this.QLSPlabel4.Text = "Đơn giá:";
             // 
             // QLSPedtSoLuong
             // 
@@ -252,14 +252,14 @@
             this.QLSPedtSoLuong.Size = new System.Drawing.Size(165, 22);
             this.QLSPedtSoLuong.TabIndex = 5;
             // 
-            // label3
+            // QLSPlabel3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 89);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 16);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Số lượng:";
+            this.QLSPlabel3.AutoSize = true;
+            this.QLSPlabel3.Location = new System.Drawing.Point(21, 89);
+            this.QLSPlabel3.Name = "QLSPlabel3";
+            this.QLSPlabel3.Size = new System.Drawing.Size(72, 16);
+            this.QLSPlabel3.TabIndex = 4;
+            this.QLSPlabel3.Text = "Số lượng:";
             // 
             // QLSPedtTenHang
             // 
@@ -268,14 +268,14 @@
             this.QLSPedtTenHang.Size = new System.Drawing.Size(165, 22);
             this.QLSPedtTenHang.TabIndex = 3;
             // 
-            // label2
+            // QLSPlabel2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 61);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Tên hàng:";
+            this.QLSPlabel2.AutoSize = true;
+            this.QLSPlabel2.Location = new System.Drawing.Point(21, 61);
+            this.QLSPlabel2.Name = "QLSPlabel2";
+            this.QLSPlabel2.Size = new System.Drawing.Size(76, 16);
+            this.QLSPlabel2.TabIndex = 2;
+            this.QLSPlabel2.Text = "Tên hàng:";
             // 
             // QLSPedtMaHang
             // 
@@ -284,14 +284,14 @@
             this.QLSPedtMaHang.Size = new System.Drawing.Size(165, 22);
             this.QLSPedtMaHang.TabIndex = 1;
             // 
-            // label1
+            // QLSPlabel1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Mã hàng:";
+            this.QLSPlabel1.AutoSize = true;
+            this.QLSPlabel1.Location = new System.Drawing.Point(21, 33);
+            this.QLSPlabel1.Name = "QLSPlabel1";
+            this.QLSPlabel1.Size = new System.Drawing.Size(70, 16);
+            this.QLSPlabel1.TabIndex = 0;
+            this.QLSPlabel1.Text = "Mã hàng:";
             // 
             // tabPage3
             // 
@@ -368,13 +368,13 @@
         private System.Windows.Forms.Button QLSPbtnSua;
         private System.Windows.Forms.Button QLSPbtnThem;
         private System.Windows.Forms.TextBox QLSPedtDonGia;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label QLSPlabel4;
         private System.Windows.Forms.TextBox QLSPedtSoLuong;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label QLSPlabel3;
         private System.Windows.Forms.TextBox QLSPedtTenHang;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label QLSPlabel2;
         private System.Windows.Forms.TextBox QLSPedtMaHang;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label QLSPlabel1;
         private System.Windows.Forms.Button QLSPbtnTimKiem;
         private System.Windows.Forms.TextBox QLSPedtTimKiem;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
