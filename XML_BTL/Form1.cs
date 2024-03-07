@@ -20,7 +20,7 @@ namespace XML_BTL
 
         XmlDocument hd_doc = new XmlDocument();
         XmlElement hd_root;
-        string hd_fileName = @"C:\Users\kindl\source\repos\XML_BTL\XML_BTL\XML\HoaDon\hoadon.xml";
+        string hd_fileName = @"C:\Users\Admin\source\repos\XML_BTL\XML_BTL\XML\HoaDon\hoadon.xml";
 
         private void hd_them_Click(object sender, EventArgs e)
         {
@@ -132,6 +132,7 @@ namespace XML_BTL
 
         private void hienthidshoadon()
         {
+            hd_grid_dshd.Rows.Clear();
             hd_doc.Load(hd_fileName);
             hd_root = hd_doc.DocumentElement;
 
@@ -235,6 +236,16 @@ namespace XML_BTL
             int i = hd_grid_dshd.CurrentCell.RowIndex;
             int j = hd_grid_chitiet.CurrentCell.RowIndex;
 
+            XmlNode nodeDel = hd_root.SelectSingleNode("hoadon[@mahd='" + hd_grid_dshd.Rows[i].Cells[0].Value + "']").
+                SelectSingleNode("sanpham[@masp='" + hd_grid_chitiet.Rows[j].Cells[0].Value + "']");
+            if(nodeDel != null)
+            {
+                hd_root.SelectSingleNode("hoadon[@mahd='" + hd_grid_dshd.Rows[i].Cells[0].Value + "']").RemoveChild(nodeDel);
+                hd_doc.Save(hd_fileName);
+            }
+
+            hd_grid_chitiet.Rows.Clear();
+            hienthichitethoadon(hd_grid_dshd.Rows[i].Cells[0].Value.ToString());
 
         }
 
@@ -254,18 +265,24 @@ namespace XML_BTL
                 hd_grid_dshd.Rows[0].Cells[3].Value = nodeFind.SelectSingleNode("tongtien").InnerText;
             } else if (hd_rbkh.Checked)
             {
-                XmlNodeList nodeFind = hd_root.SelectNodes("hoadon[khachhang[@makh='"+txt_hd_timkiem+"']]");
-
+                XmlNodeList nodeHoaDon = hd_root.SelectNodes("hoadon");
                 int sd = 0;
-                foreach (XmlNode node in nodeFind)
+
+                foreach (XmlNode xmlNode in nodeHoaDon)
                 {
-                    hd_grid_dshd.Rows.Add();
-                    hd_grid_dshd.Rows[sd].Cells[0].Value = node.SelectSingleNode("@mahd").Value;
-                    hd_grid_dshd.Rows[sd].Cells[1].Value = node.SelectSingleNode("khachhang").SelectSingleNode("@makh").Value;
-                    hd_grid_dshd.Rows[sd].Cells[2].Value = node.SelectSingleNode("ngaytao").InnerText;
-                    hd_grid_dshd.Rows[sd].Cells[3].Value = node.SelectSingleNode("tongtien").InnerText;
-                    sd++;
+                    XmlNode node = xmlNode.SelectSingleNode("khachhang[@makh='" + txt_hd_timkiem.Text + "']");
+                    if(node!= null)
+                    {
+                        hd_grid_dshd.Rows.Add();
+                        hd_grid_dshd.Rows[sd].Cells[0].Value = xmlNode.SelectSingleNode("@mahd").Value;
+                        hd_grid_dshd.Rows[sd].Cells[1].Value = xmlNode.SelectSingleNode("khachhang").SelectSingleNode("@makh").Value;
+                        hd_grid_dshd.Rows[sd].Cells[2].Value = xmlNode.SelectSingleNode("ngaytao").InnerText;
+                        hd_grid_dshd.Rows[sd].Cells[3].Value = xmlNode.SelectSingleNode("tongtien").InnerText;
+                        sd++;
+                    }
                 }
+
+               
             }
         }
     }

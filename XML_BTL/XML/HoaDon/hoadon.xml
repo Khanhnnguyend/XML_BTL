@@ -43,16 +43,11 @@
       <soluong>23</soluong>
       <dongia>12</dongia>
     </sanpham>
-    <sanpham masp="sp95">
+    <sanpham masp="sp65">
       <tensp>ad</tensp>
       <soluong>73</soluong>
       <dongia>4</dongia>
     </sanpham>
-	  <sanpham masp="sp65">
-		  <tensp>ad</tensp>
-		  <soluong>73</soluong>
-		  <dongia>4</dongia>
-	  </sanpham>
     <ngaytao>3/7/2024 12:03:12 AM</ngaytao>
     <tongtien>568</tongtien>
   </hoadon>
