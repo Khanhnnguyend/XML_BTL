@@ -20,7 +20,7 @@ namespace XML_BTL
 
         XmlDocument hd_doc = new XmlDocument();
         XmlElement hd_root;
-        string hd_fileName = @"C:\Users\Admin\source\repos\XML_BTL\XML_BTL\XML\HoaDon\hoadon.xml";
+        string hd_fileName = @"C:\Users\kindl\source\repos\XML_BTL\XML_BTL\XML\HoaDon\hoadon.xml";
 
         private void hd_them_Click(object sender, EventArgs e)
         {
