@@ -150,7 +150,9 @@ namespace XML_BTL
             if (nhanvien != null)
             {
                 root_nv.RemoveChild(nhanvien);
+                doc.Save(fileName); nv_dataGridView1.Rows.Clear(); Hienthi(nv_dataGridView1);
                 MessageBox.Show("Xoa thanh cong");
+                
             }
             else{
                 MessageBox.Show("Khong tim thay");

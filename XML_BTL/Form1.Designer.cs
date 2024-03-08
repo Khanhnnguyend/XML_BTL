@@ -36,7 +36,6 @@
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.btn_timkiemnv = new System.Windows.Forms.Button();
             this.btn_xoanv = new System.Windows.Forms.Button();
             this.btn_suanv = new System.Windows.Forms.Button();
             this.btn_themnv = new System.Windows.Forms.Button();
@@ -159,7 +158,6 @@
             // 
             // tabPage7
             // 
-            this.tabPage7.Controls.Add(this.btn_timkiemnv);
             this.tabPage7.Controls.Add(this.btn_xoanv);
             this.tabPage7.Controls.Add(this.btn_suanv);
             this.tabPage7.Controls.Add(this.btn_themnv);
@@ -184,18 +182,9 @@
             this.tabPage7.Text = "Quản lý nhân viên";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
-            // btn_timkiemnv
-            // 
-            this.btn_timkiemnv.Location = new System.Drawing.Point(493, 129);
-            this.btn_timkiemnv.Name = "btn_timkiemnv";
-            this.btn_timkiemnv.Size = new System.Drawing.Size(75, 23);
-            this.btn_timkiemnv.TabIndex = 16;
-            this.btn_timkiemnv.Text = "Tim kiem";
-            this.btn_timkiemnv.UseVisualStyleBackColor = true;
-            // 
             // btn_xoanv
             // 
-            this.btn_xoanv.Location = new System.Drawing.Point(345, 129);
+            this.btn_xoanv.Location = new System.Drawing.Point(437, 129);
             this.btn_xoanv.Name = "btn_xoanv";
             this.btn_xoanv.Size = new System.Drawing.Size(75, 23);
             this.btn_xoanv.TabIndex = 15;
@@ -205,7 +194,7 @@
             // 
             // btn_suanv
             // 
-            this.btn_suanv.Location = new System.Drawing.Point(198, 129);
+            this.btn_suanv.Location = new System.Drawing.Point(266, 129);
             this.btn_suanv.Name = "btn_suanv";
             this.btn_suanv.Size = new System.Drawing.Size(75, 23);
             this.btn_suanv.TabIndex = 14;
@@ -215,7 +204,7 @@
             // 
             // btn_themnv
             // 
-            this.btn_themnv.Location = new System.Drawing.Point(72, 129);
+            this.btn_themnv.Location = new System.Drawing.Point(86, 129);
             this.btn_themnv.Name = "btn_themnv";
             this.btn_themnv.Size = new System.Drawing.Size(75, 23);
             this.btn_themnv.TabIndex = 13;
@@ -234,9 +223,9 @@
             this.Gioitinh,
             this.Namsinh,
             this.Sdt});
-            this.nv_dataGridView1.Location = new System.Drawing.Point(28, 170);
+            this.nv_dataGridView1.Location = new System.Drawing.Point(0, 187);
             this.nv_dataGridView1.Name = "nv_dataGridView1";
-            this.nv_dataGridView1.Size = new System.Drawing.Size(565, 150);
+            this.nv_dataGridView1.Size = new System.Drawing.Size(617, 150);
             this.nv_dataGridView1.TabIndex = 12;
             this.nv_dataGridView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.nv_dataGridView1_MouseClick);
             // 
@@ -414,7 +403,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Gioitinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn Namsinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn Sdt;
-        private System.Windows.Forms.Button btn_timkiemnv;
         private System.Windows.Forms.Button btn_xoanv;
         private System.Windows.Forms.Button btn_suanv;
         private System.Windows.Forms.Button btn_themnv;
