@@ -28,10 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-<<<<<<< HEAD
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-=======
+
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -57,15 +54,12 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
->>>>>>> khanh
+
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-<<<<<<< HEAD
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.tabControl1.SuspendLayout();
-=======
+
             this.hd_grid_dshd = new System.Windows.Forms.DataGridView();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -99,7 +93,7 @@
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hd_grid_dshd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hd_grid_chitiet)).BeginInit();
->>>>>>> khanh
+
             this.SuspendLayout();
             // 
             // tabControl1
@@ -116,34 +110,21 @@
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.tabControl1.ImeMode = System.Windows.Forms.ImeMode.On;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
-<<<<<<< HEAD
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(837, 450);
-=======
+
             this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(928, 434);
->>>>>>> khanh
+
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.White;
-<<<<<<< HEAD
-            this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.tabPage1.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.tabPage1.Location = new System.Drawing.Point(4, 28);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.tabPage1.Size = new System.Drawing.Size(829, 418);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Nhập hóa đơn";
-         
-=======
+
+
+
+
             this.tabPage1.Controls.Add(this.hd_7);
             this.tabPage1.Controls.Add(this.txt_hd_tongtien);
             this.tabPage1.Controls.Add(this.hd_in);
@@ -395,74 +376,53 @@
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
             this.Column5.Width = 125;
->>>>>>> khanh
+
             // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.tabPage2.ForeColor = System.Drawing.SystemColors.ControlText;
-<<<<<<< HEAD
-            this.tabPage2.Location = new System.Drawing.Point(4, 28);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(829, 418);
-=======
+
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(920, 405);
->>>>>>> khanh
+
             this.tabPage2.TabIndex = 1;
+
             this.tabPage2.Text = "Quản lý sản phẩm";
             // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-<<<<<<< HEAD
-            this.tabPage3.Location = new System.Drawing.Point(4, 28);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(829, 418);
-=======
+
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage3.Size = new System.Drawing.Size(920, 405);
->>>>>>> khanh
+
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Quản lý nhập hàng";
             // 
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-<<<<<<< HEAD
-            this.tabPage4.Location = new System.Drawing.Point(4, 28);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(829, 418);
-=======
+
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage4.Size = new System.Drawing.Size(920, 405);
->>>>>>> khanh
+
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Quản lý khách hàng";
             // 
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.SystemColors.ControlLightLight;
-<<<<<<< HEAD
-            this.tabPage5.Location = new System.Drawing.Point(4, 28);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(829, 418);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Quản lý hóa đơn";
-=======
+
             this.tabPage5.Controls.Add(this.hd_grid_dshd);
             this.tabPage5.Controls.Add(this.hd_xoaspbtn);
             this.tabPage5.Controls.Add(this.txt_hd_dongiaql);
@@ -698,37 +658,24 @@
             // 
             this.Column14.HeaderText = "Thành Tiền";
             this.Column14.Name = "Column14";
->>>>>>> khanh
+
             // 
             // tabPage6
             // 
             this.tabPage6.BackColor = System.Drawing.SystemColors.ControlLightLight;
-<<<<<<< HEAD
-            this.tabPage6.Location = new System.Drawing.Point(4, 28);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(829, 418);
-=======
+
             this.tabPage6.Location = new System.Drawing.Point(4, 25);
             this.tabPage6.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage6.Size = new System.Drawing.Size(920, 405);
->>>>>>> khanh
+
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Báo cáo thống kê";
             // 
             // Form1
             // 
-<<<<<<< HEAD
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(837, 450);
-            this.Controls.Add(this.tabControl1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.tabControl1.ResumeLayout(false);
-=======
+
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(928, 434);
@@ -744,7 +691,7 @@
             this.tabPage5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hd_grid_dshd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hd_grid_chitiet)).EndInit();
->>>>>>> khanh
+
             this.ResumeLayout(false);
 
         }
@@ -758,8 +705,7 @@
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage6;
-<<<<<<< HEAD
-=======
+
         private System.Windows.Forms.DataGridView hd_grid;
         private System.Windows.Forms.Label hd_1;
         private System.Windows.Forms.TextBox txt_hd_kh;
@@ -808,6 +754,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
->>>>>>> khanh
+
     }
 }
