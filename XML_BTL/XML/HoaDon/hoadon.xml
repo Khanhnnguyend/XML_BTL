@@ -1,1 +1,54 @@
-﻿<?xml version="1.0" encoding="utf-8" ?> 
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE DS_hoadon[
+	<!ELEMENT DS_hoadon (hoadon*)>
+	<!ELEMENT hoadon (khachhang, sanpham*, ngaytao, tongtien)>
+	<!ELEMENT ngaytao (#PCDATA)>
+	<!ELEMENT tongtien (#PCDATA)>
+
+
+	<!ELEMENT khachhang (#PCDATA)>
+
+	<!ELEMENT sanpham (tensp, soluong, dongia)>
+	<!ELEMENT tensp (#PCDATA)>
+	<!ELEMENT soluong (#PCDATA)>
+	<!ELEMENT dongia (#PCDATA)>
+
+
+	<!ATTLIST khachhang makh ID #REQUIRED>
+	<!ATTLIST sanpham masp ID #REQUIRED>
+	<!ATTLIST hoadon mahd ID #REQUIRED>
+]>
+
+<DS_hoadon>
+  <hoadon mahd="hd5">
+    <khachhang makh="kh02" />
+    <sanpham masp="sp12">
+      <tensp>t</tensp>
+      <soluong>12</soluong>
+      <dongia>23</dongia>
+    </sanpham>
+    <sanpham masp="sp14">
+      <tensp>t3</tensp>
+      <soluong>2</soluong>
+      <dongia>23</dongia>
+    </sanpham>
+    <ngaytao>3/6/2024 10:47:45 PM</ngaytao>
+    <tongtien>322</tongtien>
+  </hoadon>
+  <hoadon mahd="hd2">
+    <khachhang makh="kh04" />
+    <sanpham masp="sp45">
+      <tensp>ad</tensp>
+      <soluong>23</soluong>
+      <dongia>12</dongia>
+    </sanpham>
+    <sanpham masp="sp65">
+      <tensp>ad</tensp>
+      <soluong>73</soluong>
+      <dongia>4</dongia>
+    </sanpham>
+    <ngaytao>3/7/2024 12:03:12 AM</ngaytao>
+    <tongtien>568</tongtien>
+  </hoadon>
+</DS_hoadon>
