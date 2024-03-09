@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\Admin\source\repos\XML_BTL\XML_BTL\bin\Debug\XML_BTL.exe.config
 C:\Users\Admin\source\repos\XML_BTL\XML_BTL\bin\Debug\XML_BTL.exe
 C:\Users\Admin\source\repos\XML_BTL\XML_BTL\bin\Debug\XML_BTL.pdb
@@ -27,3 +28,19 @@ D:\Git local reponsitory\XML_BTL\XML_BTL\obj\Debug\XML_BTL.csproj.GenerateResour
 D:\Git local reponsitory\XML_BTL\XML_BTL\obj\Debug\XML_BTL.csproj.CoreCompileInputs.cache
 D:\Git local reponsitory\XML_BTL\XML_BTL\obj\Debug\XML_BTL.exe
 D:\Git local reponsitory\XML_BTL\XML_BTL\obj\Debug\XML_BTL.pdb
+=======
+C:\Users\FPT\source\repos\XML_BTL\XML_BTL\bin\Debug\XML_BTL.exe.config
+C:\Users\FPT\source\repos\XML_BTL\XML_BTL\bin\Debug\XML_BTL.exe
+C:\Users\FPT\source\repos\XML_BTL\XML_BTL\bin\Debug\XML_BTL.pdb
+C:\Users\FPT\source\repos\XML_BTL\XML_BTL\obj\Debug\XML_BTL.csproj.AssemblyReference.cache
+C:\Users\FPT\source\repos\XML_BTL\XML_BTL\obj\Debug\XML_BTL.Form1.resources
+C:\Users\FPT\source\repos\XML_BTL\XML_BTL\obj\Debug\XML_BTL.Properties.Resources.resources
+C:\Users\FPT\source\repos\XML_BTL\XML_BTL\obj\Debug\XML_BTL.csproj.GenerateResource.cache
+C:\Users\FPT\source\repos\XML_BTL\XML_BTL\obj\Debug\XML_BTL.csproj.CoreCompileInputs.cache
+C:\Users\FPT\source\repos\XML_BTL\XML_BTL\obj\Debug\XML_BTL.exe
+C:\Users\FPT\source\repos\XML_BTL\XML_BTL\obj\Debug\XML_BTL.pdb
+C:\Users\FPT\source\repos\XML_BTL\XML_BTL\obj\Debug\XML_BTL.Form2.resources
+C:\Users\FPT\source\repos\XML_BTL\XML_BTL\obj\Debug\XML_BTL.Form3.resources
+>>>>>>> 4415b6cbd09c1ebb5a430ac22189af21bbbdb33d
+D:\Git local reponsitory\XML_BTL\XML_BTL\obj\Debug\XML_BTL.Form2.resources
+D:\Git local reponsitory\XML_BTL\XML_BTL\obj\Debug\XML_BTL.Form3.resources
