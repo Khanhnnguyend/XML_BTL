@@ -32,10 +32,6 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.QLSPdgv = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.QLSPgroupBox2 = new System.Windows.Forms.GroupBox();
             this.QLSPbtnTimKiem = new System.Windows.Forms.Button();
             this.QLSPedtTimKiem = new System.Windows.Forms.TextBox();
@@ -55,6 +51,10 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.QLSPColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QLSPColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QLSPColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.QLSPColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.QLSPdgv)).BeginInit();
@@ -115,10 +115,10 @@
             this.QLSPdgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.QLSPdgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.QLSPdgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4});
+            this.QLSPColumn1,
+            this.QLSPColumn2,
+            this.QLSPColumn3,
+            this.QLSPColumn4});
             this.QLSPdgv.Location = new System.Drawing.Point(34, 177);
             this.QLSPdgv.Name = "QLSPdgv";
             this.QLSPdgv.RowHeadersWidth = 51;
@@ -126,30 +126,6 @@
             this.QLSPdgv.Size = new System.Drawing.Size(761, 224);
             this.QLSPdgv.TabIndex = 2;
             this.QLSPdgv.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.QLSPdgv_CellMouseDoubleClick);
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Mã hàng";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Tên hàng";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Số lượng";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Đơn giá";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
             // 
             // QLSPgroupBox2
             // 
@@ -333,6 +309,30 @@
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Báo cáo thống kê";
             // 
+            // QLSPColumn1
+            // 
+            this.QLSPColumn1.HeaderText = "Mã hàng";
+            this.QLSPColumn1.MinimumWidth = 6;
+            this.QLSPColumn1.Name = "QLSPColumn1";
+            // 
+            // QLSPColumn2
+            // 
+            this.QLSPColumn2.HeaderText = "Tên hàng";
+            this.QLSPColumn2.MinimumWidth = 6;
+            this.QLSPColumn2.Name = "QLSPColumn2";
+            // 
+            // QLSPColumn3
+            // 
+            this.QLSPColumn3.HeaderText = "Số lượng";
+            this.QLSPColumn3.MinimumWidth = 6;
+            this.QLSPColumn3.Name = "QLSPColumn3";
+            // 
+            // QLSPColumn4
+            // 
+            this.QLSPColumn4.HeaderText = "Đơn giá";
+            this.QLSPColumn4.MinimumWidth = 6;
+            this.QLSPColumn4.Name = "QLSPColumn4";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -377,9 +377,9 @@
         private System.Windows.Forms.Label QLSPlabel1;
         private System.Windows.Forms.Button QLSPbtnTimKiem;
         private System.Windows.Forms.TextBox QLSPedtTimKiem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QLSPColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QLSPColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QLSPColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn QLSPColumn4;
     }
 }
