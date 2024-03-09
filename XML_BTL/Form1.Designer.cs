@@ -33,10 +33,6 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dgv = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cl2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtTK3 = new System.Windows.Forms.TextBox();
             this.btTK3 = new System.Windows.Forms.Button();
@@ -58,6 +54,10 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cl2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
@@ -138,34 +138,6 @@
             this.dgv.Size = new System.Drawing.Size(842, 286);
             this.dgv.TabIndex = 2;
             this.dgv.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dgv_MouseClick);
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "maSP";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
-            // 
-            // cl2
-            // 
-            this.cl2.HeaderText = "tên SP";
-            this.cl2.MinimumWidth = 6;
-            this.cl2.Name = "cl2";
-            this.cl2.Width = 125;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Số Lượng";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 125;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "đơn giá ";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 125;
             // 
             // groupBox2
             // 
@@ -369,6 +341,34 @@
             this.tabPage6.Size = new System.Drawing.Size(1169, 688);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Báo cáo thống kê";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "mã sản phẩm ";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 160;
+            // 
+            // cl2
+            // 
+            this.cl2.HeaderText = "tên sản phẩm";
+            this.cl2.MinimumWidth = 6;
+            this.cl2.Name = "cl2";
+            this.cl2.Width = 160;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Hàng trong kho ";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 160;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Giá nhập ";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 160;
             // 
             // Form1
             // 
