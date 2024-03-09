@@ -1,5 +1,6 @@
 ﻿namespace XML_BTL
 {
+
     partial class Form1
     {
         /// <summary>
@@ -28,7 +29,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.hd_7 = new System.Windows.Forms.Label();
@@ -48,20 +49,20 @@
             this.hd_1 = new System.Windows.Forms.Label();
             this.txt_hd_kh = new System.Windows.Forms.TextBox();
             this.hd_grid = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1hd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2hd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3hd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4hd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5hd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.hd_grid_dshd = new System.Windows.Forms.DataGridView();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6hd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7hd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8hd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9hd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hd_xoaspbtn = new System.Windows.Forms.Button();
             this.txt_hd_dongiaql = new System.Windows.Forms.TextBox();
             this.hd_11 = new System.Windows.Forms.Label();
@@ -78,11 +79,11 @@
             this.hd_9 = new System.Windows.Forms.Label();
             this.hd_8 = new System.Windows.Forms.Label();
             this.hd_grid_chitiet = new System.Windows.Forms.DataGridView();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10hd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11hd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12hd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column13hd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column14hd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -307,20 +308,20 @@
             this.hd_grid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.hd_grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.hd_grid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5});
+            this.Column1hd,
+            this.Column2hd,
+            this.Column3hd,
+            this.Column4hd,
+            this.Column5hd});
             this.hd_grid.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.hd_grid.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.hd_grid.DefaultCellStyle = dataGridViewCellStyle1;
             this.hd_grid.GridColor = System.Drawing.Color.Black;
             this.hd_grid.Location = new System.Drawing.Point(12, 88);
             this.hd_grid.Name = "hd_grid";
@@ -331,41 +332,41 @@
             this.hd_grid.TabIndex = 0;
             this.hd_grid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.hd_grid_CellContentClick);
             // 
-            // Column1
+            // Column1hd
             // 
-            this.Column1.HeaderText = "Mã Sản Phẩm";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
+            this.Column1hd.HeaderText = "Mã Sản Phẩm";
+            this.Column1hd.MinimumWidth = 6;
+            this.Column1hd.Name = "Column1hd";
+            this.Column1hd.Width = 125;
             // 
-            // Column2
+            // Column2hd
             // 
-            this.Column2.HeaderText = "Tên Sản Phẩm";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 125;
+            this.Column2hd.HeaderText = "Tên Sản Phẩm";
+            this.Column2hd.MinimumWidth = 6;
+            this.Column2hd.Name = "Column2hd";
+            this.Column2hd.Width = 125;
             // 
-            // Column3
+            // Column3hd
             // 
-            this.Column3.HeaderText = "Số Lượng";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 125;
+            this.Column3hd.HeaderText = "Số Lượng";
+            this.Column3hd.MinimumWidth = 6;
+            this.Column3hd.Name = "Column3hd";
+            this.Column3hd.Width = 125;
             // 
-            // Column4
+            // Column4hd
             // 
-            this.Column4.HeaderText = "Đơn Giá";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 125;
+            this.Column4hd.HeaderText = "Đơn Giá";
+            this.Column4hd.MinimumWidth = 6;
+            this.Column4hd.Name = "Column4hd";
+            this.Column4hd.Width = 125;
             // 
-            // Column5
+            // Column5hd
             // 
-            this.Column5.FillWeight = 50F;
-            this.Column5.HeaderText = "Thành Tiền";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 125;
+            this.Column5hd.FillWeight = 50F;
+            this.Column5hd.HeaderText = "Thành Tiền";
+            this.Column5hd.MinimumWidth = 6;
+            this.Column5hd.Name = "Column5hd";
+            this.Column5hd.Width = 125;
             // 
             // tabPage2
             // 
@@ -434,35 +435,35 @@
             // 
             this.hd_grid_dshd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.hd_grid_dshd.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column6,
-            this.Column7,
-            this.Column8,
-            this.Column9});
-            this.hd_grid_dshd.Location = new System.Drawing.Point(267, 22);
+            this.Column6hd,
+            this.Column7hd,
+            this.Column8hd,
+            this.Column9hd});
+            this.hd_grid_dshd.Location = new System.Drawing.Point(355, 22);
             this.hd_grid_dshd.Name = "hd_grid_dshd";
             this.hd_grid_dshd.Size = new System.Drawing.Size(440, 150);
             this.hd_grid_dshd.TabIndex = 19;
             this.hd_grid_dshd.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.hd_grid_dshd_CellContentClick);
             // 
-            // Column6
+            // Column6hd
             // 
-            this.Column6.HeaderText = "Số HĐ";
-            this.Column6.Name = "Column6";
+            this.Column6hd.HeaderText = "Số HĐ";
+            this.Column6hd.Name = "Column6hd";
             // 
-            // Column7
+            // Column7hd
             // 
-            this.Column7.HeaderText = "Mã KH";
-            this.Column7.Name = "Column7";
+            this.Column7hd.HeaderText = "Mã KH";
+            this.Column7hd.Name = "Column7hd";
             // 
-            // Column8
+            // Column8hd
             // 
-            this.Column8.HeaderText = "Ngày Tạo";
-            this.Column8.Name = "Column8";
+            this.Column8hd.HeaderText = "Ngày Tạo";
+            this.Column8hd.Name = "Column8hd";
             // 
-            // Column9
+            // Column9hd
             // 
-            this.Column9.HeaderText = "Tổng Tiền";
-            this.Column9.Name = "Column9";
+            this.Column9hd.HeaderText = "Tổng Tiền";
+            this.Column9hd.Name = "Column9hd";
             // 
             // hd_xoaspbtn
             // 
@@ -476,7 +477,7 @@
             // 
             // txt_hd_dongiaql
             // 
-            this.txt_hd_dongiaql.Location = new System.Drawing.Point(90, 229);
+            this.txt_hd_dongiaql.Location = new System.Drawing.Point(119, 229);
             this.txt_hd_dongiaql.Name = "txt_hd_dongiaql";
             this.txt_hd_dongiaql.Size = new System.Drawing.Size(150, 19);
             this.txt_hd_dongiaql.TabIndex = 17;
@@ -492,7 +493,7 @@
             // 
             // txt_hd_soluongql
             // 
-            this.txt_hd_soluongql.Location = new System.Drawing.Point(90, 185);
+            this.txt_hd_soluongql.Location = new System.Drawing.Point(119, 185);
             this.txt_hd_soluongql.Name = "txt_hd_soluongql";
             this.txt_hd_soluongql.Size = new System.Drawing.Size(150, 19);
             this.txt_hd_soluongql.TabIndex = 15;
@@ -509,7 +510,7 @@
             // hd_tensplb_label
             // 
             this.hd_tensplb_label.AutoSize = true;
-            this.hd_tensplb_label.Location = new System.Drawing.Point(162, 152);
+            this.hd_tensplb_label.Location = new System.Drawing.Point(181, 152);
             this.hd_tensplb_label.Name = "hd_tensplb_label";
             this.hd_tensplb_label.Size = new System.Drawing.Size(49, 13);
             this.hd_tensplb_label.TabIndex = 12;
@@ -518,7 +519,7 @@
             // hd_masplb_label
             // 
             this.hd_masplb_label.AutoSize = true;
-            this.hd_masplb_label.Location = new System.Drawing.Point(40, 152);
+            this.hd_masplb_label.Location = new System.Drawing.Point(57, 152);
             this.hd_masplb_label.Name = "hd_masplb_label";
             this.hd_masplb_label.Size = new System.Drawing.Size(44, 13);
             this.hd_masplb_label.TabIndex = 10;
@@ -532,12 +533,13 @@
             this.hd_updatebtn.TabIndex = 9;
             this.hd_updatebtn.Text = "Sửa";
             this.hd_updatebtn.UseVisualStyleBackColor = true;
+            this.hd_updatebtn.Click += new System.EventHandler(this.hd_updatebtn_Click);
             // 
             // hd_dsbtn
             // 
             this.hd_dsbtn.Location = new System.Drawing.Point(20, 103);
             this.hd_dsbtn.Name = "hd_dsbtn";
-            this.hd_dsbtn.Size = new System.Drawing.Size(220, 23);
+            this.hd_dsbtn.Size = new System.Drawing.Size(249, 23);
             this.hd_dsbtn.TabIndex = 8;
             this.hd_dsbtn.Text = "Xem Danh Sách";
             this.hd_dsbtn.UseVisualStyleBackColor = true;
@@ -545,7 +547,7 @@
             // hd_rbkh
             // 
             this.hd_rbkh.AutoSize = true;
-            this.hd_rbkh.Location = new System.Drawing.Point(143, 70);
+            this.hd_rbkh.Location = new System.Drawing.Point(153, 70);
             this.hd_rbkh.Name = "hd_rbkh";
             this.hd_rbkh.Size = new System.Drawing.Size(116, 17);
             this.hd_rbkh.TabIndex = 7;
@@ -566,7 +568,7 @@
             // 
             // hd_timkiembtn
             // 
-            this.hd_timkiembtn.Location = new System.Drawing.Point(165, 34);
+            this.hd_timkiembtn.Location = new System.Drawing.Point(194, 34);
             this.hd_timkiembtn.Name = "hd_timkiembtn";
             this.hd_timkiembtn.Size = new System.Drawing.Size(75, 23);
             this.hd_timkiembtn.TabIndex = 5;
@@ -584,7 +586,7 @@
             // hd_9
             // 
             this.hd_9.AutoSize = true;
-            this.hd_9.Location = new System.Drawing.Point(267, 191);
+            this.hd_9.Location = new System.Drawing.Point(355, 191);
             this.hd_9.Name = "hd_9";
             this.hd_9.Size = new System.Drawing.Size(98, 13);
             this.hd_9.TabIndex = 3;
@@ -593,7 +595,7 @@
             // hd_8
             // 
             this.hd_8.AutoSize = true;
-            this.hd_8.Location = new System.Drawing.Point(267, 6);
+            this.hd_8.Location = new System.Drawing.Point(355, 6);
             this.hd_8.Name = "hd_8";
             this.hd_8.Size = new System.Drawing.Size(119, 13);
             this.hd_8.TabIndex = 2;
@@ -603,42 +605,42 @@
             // 
             this.hd_grid_chitiet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.hd_grid_chitiet.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column10,
-            this.Column11,
-            this.Column12,
-            this.Column13,
-            this.Column14});
-            this.hd_grid_chitiet.Location = new System.Drawing.Point(267, 207);
+            this.Column10hd,
+            this.Column11hd,
+            this.Column12hd,
+            this.Column13hd,
+            this.Column14hd});
+            this.hd_grid_chitiet.Location = new System.Drawing.Point(355, 207);
             this.hd_grid_chitiet.Name = "hd_grid_chitiet";
             this.hd_grid_chitiet.RowHeadersWidth = 51;
             this.hd_grid_chitiet.Size = new System.Drawing.Size(555, 190);
             this.hd_grid_chitiet.TabIndex = 1;
             this.hd_grid_chitiet.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.hd_grid_chitiet_CellContentClick);
             // 
-            // Column10
+            // Column10hd
             // 
-            this.Column10.HeaderText = "Mã SP";
-            this.Column10.Name = "Column10";
+            this.Column10hd.HeaderText = "Mã SP";
+            this.Column10hd.Name = "Column10hd";
             // 
-            // Column11
+            // Column11hd
             // 
-            this.Column11.HeaderText = "Tên SP";
-            this.Column11.Name = "Column11";
+            this.Column11hd.HeaderText = "Tên SP";
+            this.Column11hd.Name = "Column11hd";
             // 
-            // Column12
+            // Column12hd
             // 
-            this.Column12.HeaderText = "Số Lượng";
-            this.Column12.Name = "Column12";
+            this.Column12hd.HeaderText = "Số Lượng";
+            this.Column12hd.Name = "Column12hd";
             // 
-            // Column13
+            // Column13hd
             // 
-            this.Column13.HeaderText = "Đơn Giá";
-            this.Column13.Name = "Column13";
+            this.Column13hd.HeaderText = "Đơn Giá";
+            this.Column13hd.Name = "Column13hd";
             // 
-            // Column14
+            // Column14hd
             // 
-            this.Column14.HeaderText = "Thành Tiền";
-            this.Column14.Name = "Column14";
+            this.Column14hd.HeaderText = "Thành Tiền";
+            this.Column14hd.Name = "Column14hd";
             // 
             // tabPage6
             // 
@@ -714,20 +716,22 @@
         private System.Windows.Forms.Label hd_10;
         private System.Windows.Forms.Label hd_tensplb_label;
         private System.Windows.Forms.Button hd_xoaspbtn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridView hd_grid_dshd;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1hd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2hd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3hd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4hd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5hd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6hd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7hd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8hd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9hd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10hd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column11hd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column12hd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column13hd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column14hd;
+
+
     }
 }
