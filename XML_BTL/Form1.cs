@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,15 +14,17 @@ namespace XML_BTL
 {
     public partial class Form1 : Form
     {
+
+        XmlDocument hd_doc = new XmlDocument(), kh_doc = new XmlDocument() , sp_doc = new XmlDocument();
+        XmlElement hd_root, kh_root, sp_root;
+        string hd_fileName = @"D:\Git local reponsitory\XML_BTL\XML_BTL\XML\HoaDon\hoadon.xml"
+        , kh_fileName = @"D:\Git local reponsitory\XML_BTL\XML_BTL\XML\KhachHang\KhachHang.xml"
+        , sp_fileName = @"D:\Git local reponsitory\XML_BTL\XML_BTL\XML\SanPham\QLSP.xml";
+
         public Form1()
         {
             InitializeComponent();
         }
-
-        XmlDocument hd_doc = new XmlDocument();
-        XmlElement hd_root;
-        string hd_fileName = @"C:\Users\kindl\source\repos\XML_BTL\XML_BTL\XML\HoaDon\hoadon.xml";
-
         private void hd_them_Click(object sender, EventArgs e)
         {
             int row = hd_grid.RowCount;
@@ -111,10 +114,7 @@ namespace XML_BTL
                 sanpham.AppendChild(dongia);
     
                 hoadon.AppendChild(sanpham);
-
-
             }
-
 
             XmlElement ngaytao = hd_doc.CreateElement("ngaytao");
             ngaytao.InnerText = DateTime.Now.ToString();
@@ -143,31 +143,18 @@ namespace XML_BTL
 
             foreach (XmlNode item in ds)
             {
-
-
                 hd_grid_dshd.Rows.Add();
                 hd_grid_dshd.Rows[sd].Cells[0].Value = item.SelectSingleNode("@mahd").Value;
                 hd_grid_dshd.Rows[sd].Cells[1].Value = item.SelectSingleNode("khachhang").SelectSingleNode("@makh").Value;
                 hd_grid_dshd.Rows[sd].Cells[2].Value = item.SelectSingleNode("ngaytao").InnerText;
                 hd_grid_dshd.Rows[sd].Cells[3].Value = item.SelectSingleNode("tongtien").InnerText;
-                
-                
 
                 sd++;
-
-
-
-
             }
         }
 
-       
-
-       
-
         private void tabPage5_Click(object sender, EventArgs e)
         {
-            
             hienthidshoadon();
         }
 
@@ -209,13 +196,7 @@ namespace XML_BTL
                 hd_grid_chitiet.Rows[sd].Cells[3].Value = item.SelectSingleNode("dongia").InnerText;
                 hd_grid_chitiet.Rows[sd].Cells[4].Value = (Double.Parse(item.SelectSingleNode("soluong").InnerText) + Double.Parse(item.SelectSingleNode("dongia").InnerText)).ToString();
 
-
-
                 sd++;
-
-
-
-
             }
         }
 
@@ -284,6 +265,90 @@ namespace XML_BTL
 
                
             }
+        }
+
+        private void btnTK_DoanhThu_Click(object sender, EventArgs e)
+        {
+            lbTK_content.Text = "Bạn đang xem doanh thu theo ngày";
+            List<(DateTime, int)> DoanhThu = new List<(DateTime, int)>();
+
+            hd_doc.Load(hd_fileName);
+            hd_root = hd_doc.DocumentElement;
+            XmlNodeList DSHoaDon = hd_root.SelectNodes("hoadon");
+
+            int n = DSHoaDon.Count;
+            int j = 0;
+            DoanhThu.Add((DateTime.Parse(DSHoaDon[0].SelectSingleNode("ngaytao").InnerText).Date, 0));
+
+            for (int i = 0; i < n; i++ )
+            {
+                DateTime currentDate = DateTime.Parse(DSHoaDon[i].SelectSingleNode("ngaytao").InnerText);
+                int tongtien = int.Parse(DSHoaDon[i].SelectSingleNode("tongtien").InnerText);
+                if (DoanhThu[j].Item1 != currentDate.Date)
+                {
+                    j++;
+                    DoanhThu.Add((currentDate.Date, 0));
+                }
+                DoanhThu[j] = (currentDate.Date, tongtien + DoanhThu[j].Item2);
+            }
+
+            DataTable tb = new DataTable();
+            tb.Columns.Add("Ngày");
+            tb.Columns.Add("Doanh thu");
+
+            for (int i = 0;i <= j;i++)
+            {
+                DataRow row = tb.NewRow();
+                row["Ngày"] = DoanhThu[i].Item1;
+                row["Doanh thu"] = DoanhThu[i].Item2;
+                tb.Rows.Add(row);
+            }
+            dgvTK.DataSource = tb;
+        }
+        private void btnTK_KhachMuaNhieu_Click(object sender, EventArgs e)
+        {
+            lbTK_content.Text = "Bạn đang xem các khách hàng mua nhiều trong tháng "+ DateTime.Now.Month;
+            Dictionary<String, int> KhachPaid = new Dictionary<string, int>();
+            
+            hd_doc.Load(hd_fileName);
+            hd_root = hd_doc.DocumentElement;
+            XmlNodeList DSHoaDon = hd_root.SelectNodes("hoadon");
+
+            int n = DSHoaDon.Count;
+            int j = 0;
+            for(int i = 0;i<n; i++)
+            {
+                if (DateTime.Parse(DSHoaDon[i].SelectSingleNode("ngaytao").InnerText).Month == DateTime.Now.Month)
+                {
+                    String maK = DSHoaDon[i].SelectSingleNode("khachhang").SelectSingleNode("@makh").Value;
+                    int tongtien = int.Parse(DSHoaDon[i].SelectSingleNode("tongtien").InnerText);
+                    if (KhachPaid.ContainsKey(maK))
+                    {
+                        KhachPaid[maK] += tongtien;
+                    }
+                    else
+                    {
+                        KhachPaid.Add(maK, tongtien);
+                    }
+                }
+                
+            }
+
+            DataTable tb = new DataTable();
+            tb.Columns.Add("Mã khách");
+            tb.Columns.Add("Tên khách");
+            tb.Columns.Add("Tổng tiền");
+
+            foreach(var item in KhachPaid)
+            {
+                DataRow row = tb.NewRow();
+                row["Mã khách"] = item.Key;
+                row["Tổng tiền"] = item.Value;
+                
+                tb.Rows.Add(row);
+            }
+
+            dgvTK.DataSource = tb;
         }
     }
 }

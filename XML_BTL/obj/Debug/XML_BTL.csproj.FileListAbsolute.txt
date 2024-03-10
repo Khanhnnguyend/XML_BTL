@@ -27,3 +27,4 @@ D:\Git local reponsitory\XML_BTL\XML_BTL\obj\Debug\XML_BTL.csproj.GenerateResour
 D:\Git local reponsitory\XML_BTL\XML_BTL\obj\Debug\XML_BTL.csproj.CoreCompileInputs.cache
 D:\Git local reponsitory\XML_BTL\XML_BTL\obj\Debug\XML_BTL.exe
 D:\Git local reponsitory\XML_BTL\XML_BTL\obj\Debug\XML_BTL.pdb
+D:\Git local reponsitory\XML_BTL\XML_BTL\obj\Debug\XML_BTL.Form1.resources

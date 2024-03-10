@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <!DOCTYPE DS_hoadon[
 	<!ELEMENT DS_hoadon (hoadon*)>
 	<!ELEMENT hoadon (khachhang, sanpham*, ngaytao, tongtien)>
@@ -19,7 +18,6 @@
 	<!ATTLIST sanpham masp ID #REQUIRED>
 	<!ATTLIST hoadon mahd ID #REQUIRED>
 ]>
-
 <DS_hoadon>
   <hoadon mahd="hd5">
     <khachhang makh="kh02" />
@@ -51,4 +49,16 @@
     <ngaytao>3/7/2024 12:03:12 AM</ngaytao>
     <tongtien>568</tongtien>
   </hoadon>
+  <hoadon mahd="hd3">
+    <khachhang makh="HD01" />
+    <sanpham masp="">
+      <tensp>
+      </tensp>
+      <soluong>2</soluong>
+      <dongia>10000</dongia>
+    </sanpham>
+    <ngaytao>3/9/2024 6:10:41 PM</ngaytao>
+    <tongtien>20000</tongtien>
+  </hoadon>
+ 
 </DS_hoadon>
