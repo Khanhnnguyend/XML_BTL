@@ -329,8 +329,9 @@
             // 
             this.hd_grid.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
             this.hd_grid.AllowUserToAddRows = false;
+            this.hd_grid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.hd_grid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.hd_grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.hd_grid.ColumnHeadersHeight = 29;
             this.hd_grid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
@@ -362,28 +363,24 @@
             this.Column1.HeaderText = "Mã Sản Phẩm";
             this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Tên Sản Phẩm";
             this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
-            this.Column2.Width = 125;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Số Lượng";
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
-            this.Column3.Width = 125;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Đơn Giá";
             this.Column4.MinimumWidth = 6;
             this.Column4.Name = "Column4";
-            this.Column4.Width = 125;
             // 
             // Column5
             // 
@@ -391,7 +388,6 @@
             this.Column5.HeaderText = "Thành Tiền";
             this.Column5.MinimumWidth = 6;
             this.Column5.Name = "Column5";
-            this.Column5.Width = 125;
             // 
             // tabPage2
             // 
@@ -458,6 +454,7 @@
             // 
             // hd_grid_dshd
             // 
+            this.hd_grid_dshd.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.hd_grid_dshd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.hd_grid_dshd.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column6,
@@ -468,37 +465,33 @@
             this.hd_grid_dshd.Margin = new System.Windows.Forms.Padding(4);
             this.hd_grid_dshd.Name = "hd_grid_dshd";
             this.hd_grid_dshd.RowHeadersWidth = 51;
-            this.hd_grid_dshd.Size = new System.Drawing.Size(587, 185);
+            this.hd_grid_dshd.Size = new System.Drawing.Size(740, 185);
             this.hd_grid_dshd.TabIndex = 19;
-            this.hd_grid_dshd.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.hd_grid_dshd_CellContentClick);
+            this.hd_grid_dshd.MouseClick += new System.Windows.Forms.MouseEventHandler(this.hd_grid_dshd_MouseClick);
             // 
             // Column6
             // 
             this.Column6.HeaderText = "Số HĐ";
             this.Column6.MinimumWidth = 6;
             this.Column6.Name = "Column6";
-            this.Column6.Width = 125;
             // 
             // Column7
             // 
             this.Column7.HeaderText = "Mã KH";
             this.Column7.MinimumWidth = 6;
             this.Column7.Name = "Column7";
-            this.Column7.Width = 125;
             // 
             // Column8
             // 
             this.Column8.HeaderText = "Ngày Tạo";
             this.Column8.MinimumWidth = 6;
             this.Column8.Name = "Column8";
-            this.Column8.Width = 125;
             // 
             // Column9
             // 
             this.Column9.HeaderText = "Tổng Tiền";
             this.Column9.MinimumWidth = 6;
             this.Column9.Name = "Column9";
-            this.Column9.Width = 125;
             // 
             // hd_xoaspbtn
             // 
@@ -586,6 +579,7 @@
             this.hd_dsbtn.TabIndex = 8;
             this.hd_dsbtn.Text = "Xem Danh Sách";
             this.hd_dsbtn.UseVisualStyleBackColor = true;
+            this.hd_dsbtn.Click += new System.EventHandler(this.hd_dsbtn_Click);
             // 
             // hd_rbkh
             // 
@@ -652,6 +646,7 @@
             // 
             // hd_grid_chitiet
             // 
+            this.hd_grid_chitiet.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.hd_grid_chitiet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.hd_grid_chitiet.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column10,
@@ -672,35 +667,30 @@
             this.Column10.HeaderText = "Mã SP";
             this.Column10.MinimumWidth = 6;
             this.Column10.Name = "Column10";
-            this.Column10.Width = 125;
             // 
             // Column11
             // 
             this.Column11.HeaderText = "Tên SP";
             this.Column11.MinimumWidth = 6;
             this.Column11.Name = "Column11";
-            this.Column11.Width = 125;
             // 
             // Column12
             // 
             this.Column12.HeaderText = "Số Lượng";
             this.Column12.MinimumWidth = 6;
             this.Column12.Name = "Column12";
-            this.Column12.Width = 125;
             // 
             // Column13
             // 
             this.Column13.HeaderText = "Đơn Giá";
             this.Column13.MinimumWidth = 6;
             this.Column13.Name = "Column13";
-            this.Column13.Width = 125;
             // 
             // Column14
             // 
             this.Column14.HeaderText = "Thành Tiền";
             this.Column14.MinimumWidth = 6;
             this.Column14.Name = "Column14";
-            this.Column14.Width = 125;
             // 
             // tabPage6
             // 
@@ -734,17 +724,18 @@
             this.btnTK_HangBanCHay.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnTK_HangBanCHay.Location = new System.Drawing.Point(55, 375);
             this.btnTK_HangBanCHay.Name = "btnTK_HangBanCHay";
-            this.btnTK_HangBanCHay.Size = new System.Drawing.Size(299, 47);
+            this.btnTK_HangBanCHay.Size = new System.Drawing.Size(344, 47);
             this.btnTK_HangBanCHay.TabIndex = 5;
             this.btnTK_HangBanCHay.Text = "Các mặt hàng bán chạy trong tháng này";
             this.btnTK_HangBanCHay.UseVisualStyleBackColor = false;
+            this.btnTK_HangBanCHay.Click += new System.EventHandler(this.btnTK_HangBanCHay_Click);
             // 
             // btnTK_KhachMuaNhieu
             // 
             this.btnTK_KhachMuaNhieu.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnTK_KhachMuaNhieu.Location = new System.Drawing.Point(55, 276);
             this.btnTK_KhachMuaNhieu.Name = "btnTK_KhachMuaNhieu";
-            this.btnTK_KhachMuaNhieu.Size = new System.Drawing.Size(299, 47);
+            this.btnTK_KhachMuaNhieu.Size = new System.Drawing.Size(344, 47);
             this.btnTK_KhachMuaNhieu.TabIndex = 4;
             this.btnTK_KhachMuaNhieu.Text = "Khách hàng mua nhiều trong tháng này";
             this.btnTK_KhachMuaNhieu.UseVisualStyleBackColor = false;
@@ -755,7 +746,7 @@
             this.btnTK_DoanhThu.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnTK_DoanhThu.Location = new System.Drawing.Point(55, 175);
             this.btnTK_DoanhThu.Name = "btnTK_DoanhThu";
-            this.btnTK_DoanhThu.Size = new System.Drawing.Size(299, 47);
+            this.btnTK_DoanhThu.Size = new System.Drawing.Size(344, 47);
             this.btnTK_DoanhThu.TabIndex = 3;
             this.btnTK_DoanhThu.Text = "Thông kê doanh thu theo ngày";
             this.btnTK_DoanhThu.UseVisualStyleBackColor = false;
@@ -771,7 +762,7 @@
             this.lbTK_content.Name = "lbTK_content";
             this.lbTK_content.Size = new System.Drawing.Size(451, 82);
             this.lbTK_content.TabIndex = 2;
-            this.lbTK_content.Text = "Bạn đang xem";
+            this.lbTK_content.Text = "Báo cáo thống kê";
             this.lbTK_content.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dgvTK
@@ -795,6 +786,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -852,11 +844,6 @@
         private System.Windows.Forms.Label hd_10;
         private System.Windows.Forms.Label hd_tensplb_label;
         private System.Windows.Forms.Button hd_xoaspbtn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridView hd_grid_dshd;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
@@ -873,5 +860,10 @@
         private System.Windows.Forms.Button btnTK_HangBanCHay;
         private System.Windows.Forms.Button btnTK_KhachMuaNhieu;
         private System.Windows.Forms.Button btnTK_DoanhThu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
     }
 }

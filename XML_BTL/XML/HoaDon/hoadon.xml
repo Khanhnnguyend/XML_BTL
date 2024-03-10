@@ -50,7 +50,7 @@
     <tongtien>568</tongtien>
   </hoadon>
   <hoadon mahd="hd3">
-    <khachhang makh="HD01" />
+    <khachhang makh="KH01" />
     <sanpham masp="">
       <tensp>
       </tensp>
@@ -60,5 +60,6 @@
     <ngaytao>3/9/2024 6:10:41 PM</ngaytao>
     <tongtien>20000</tongtien>
   </hoadon>
+
  
 </DS_hoadon>

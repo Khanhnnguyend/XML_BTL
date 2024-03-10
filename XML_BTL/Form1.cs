@@ -158,15 +158,7 @@ namespace XML_BTL
             hienthidshoadon();
         }
 
-        private void hd_grid_dshd_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
-            int i = hd_grid_dshd.CurrentCell.RowIndex;
-            
-            string mahd = hd_grid_dshd.Rows[i].Cells[0].Value.ToString();
-            
-            hienthichitethoadon(mahd);
-        }
 
         private void hienthichitethoadon(string mahd)
         {
@@ -177,11 +169,8 @@ namespace XML_BTL
             
             hoadonnode = hd_root.SelectSingleNode("hoadon[@mahd='" + mahd + "']");
             XmlNodeList dssp;
+            dssp = hoadonnode.SelectNodes("sanpham");
 
-             dssp = hoadonnode.SelectNodes("sanpham");
-
-
-            
             int sd = 0;
 
             foreach (XmlNode item in dssp)
@@ -198,6 +187,28 @@ namespace XML_BTL
 
                 sd++;
             }
+        }
+
+        private void hd_dsbtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            hienthidshoadon();
+        }
+
+        private void hd_grid_dshd_MouseClick(object sender, MouseEventArgs e)
+        {
+            int i = hd_grid_dshd.CurrentCell.RowIndex;
+            if(i < hd_grid_dshd.Rows.Count-1)
+            {
+                string mahd = hd_grid_dshd.Rows[i].Cells[0].Value.ToString();
+                hienthichitethoadon(mahd);
+            }
+            else
+                hd_grid_chitiet.Rows.Clear();
         }
 
         private void hd_grid_chitiet_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -269,7 +280,7 @@ namespace XML_BTL
 
         private void btnTK_DoanhThu_Click(object sender, EventArgs e)
         {
-            lbTK_content.Text = "Bạn đang xem doanh thu theo ngày";
+            lbTK_content.Text = "Doanh thu theo ngày";
             List<(DateTime, int)> DoanhThu = new List<(DateTime, int)>();
 
             hd_doc.Load(hd_fileName);
@@ -307,9 +318,13 @@ namespace XML_BTL
         }
         private void btnTK_KhachMuaNhieu_Click(object sender, EventArgs e)
         {
-            lbTK_content.Text = "Bạn đang xem các khách hàng mua nhiều trong tháng "+ DateTime.Now.Month;
+            lbTK_content.Text = "Khách hàng mua nhiều trong tháng "+ DateTime.Now.Month;
             Dictionary<String, int> KhachPaid = new Dictionary<string, int>();
-            
+
+            kh_doc.Load(kh_fileName);
+            kh_root = kh_doc.DocumentElement;
+            XmlNodeList DSKH = kh_root.SelectNodes("KhachHang");
+
             hd_doc.Load(hd_fileName);
             hd_root = hd_doc.DocumentElement;
             XmlNodeList DSHoaDon = hd_root.SelectNodes("hoadon");
@@ -337,18 +352,84 @@ namespace XML_BTL
             DataTable tb = new DataTable();
             tb.Columns.Add("Mã khách");
             tb.Columns.Add("Tên khách");
+            tb.Columns.Add("Địa chỉ");
+            tb.Columns.Add("SDT");
             tb.Columns.Add("Tổng tiền");
-
-            foreach(var item in KhachPaid)
+            foreach (var item in KhachPaid.OrderByDescending(kv => kv.Value).ToDictionary(kv => kv.Key, kv => kv.Value))
             {
                 DataRow row = tb.NewRow();
                 row["Mã khách"] = item.Key;
                 row["Tổng tiền"] = item.Value;
-                
+                foreach(XmlNode KH in DSKH)
+                {
+                    if(KH.SelectSingleNode("@MaK").Value.ToLower() == item.Key.ToLower())
+                    {
+                        row["Tên khách"] = KH.SelectSingleNode("tenKhach").InnerText;
+                        row["Địa chỉ"] = KH.SelectSingleNode("diaChi").InnerText;
+                        row["SDT"] = KH.SelectSingleNode("SDT").InnerText;
+                    }
+                }
                 tb.Rows.Add(row);
             }
 
             dgvTK.DataSource = tb;
+        }
+
+        private void btnTK_HangBanCHay_Click(object sender, EventArgs e)
+        {
+            lbTK_content.Text = "Hàng bán chạy";
+            Dictionary<String, int> SLHangBan = new Dictionary<string, int>();
+
+            sp_doc.Load(sp_fileName);
+            sp_root = sp_doc.DocumentElement;
+            XmlNodeList DSSP = sp_root.SelectNodes("SanPham");
+
+            hd_doc.Load(hd_fileName);
+            hd_root = hd_doc.DocumentElement;
+            XmlNodeList DSHoaDon = hd_root.SelectNodes("hoadon");
+
+            foreach(XmlNode HoaDon in DSHoaDon)
+            {
+                if(DateTime.Parse(HoaDon.SelectSingleNode("ngaytao").InnerText).Month == DateTime.Now.Month)
+                {
+                    XmlNodeList SPs = HoaDon.SelectNodes("sanpham");
+                    foreach (XmlNode SP in SPs)
+                    {
+                        String maSP= SP.SelectSingleNode("@masp").Value;
+                        int SLsp = int.Parse(SP.SelectSingleNode("soluong").InnerText);
+                        if (SLHangBan.ContainsKey(maSP))
+                        {
+                            SLHangBan[maSP] += SLsp;
+                        }
+                        else SLHangBan.Add(maSP, SLsp);
+                    }
+                }
+            }
+            
+
+            DataTable tb = new DataTable();
+            tb.Columns.Add("Mã SP");
+            tb.Columns.Add("Tên SP");
+            tb.Columns.Add("Giá");
+            tb.Columns.Add("SL đã bán");
+
+            foreach (var item in SLHangBan.OrderByDescending(kv => kv.Value).ToDictionary(kv => kv.Key, kv => kv.Value))
+            {
+                DataRow row = tb.NewRow();
+                row["Mã SP"] = item.Key;
+                row["SL đã bán"] = item.Value;
+                foreach (XmlNode sp in DSSP)
+                {
+                    if(sp.SelectSingleNode("@MaHang").Value == item.Key)
+                    {
+                        row["Tên SP"] = sp.SelectSingleNode("TenHang").InnerText;
+                        row["Giá"] = sp.SelectSingleNode("DonGia");
+                    }
+                }
+                tb.Rows.Add(row);
+            }
+            dgvTK.DataSource = tb;
+
         }
     }
 }

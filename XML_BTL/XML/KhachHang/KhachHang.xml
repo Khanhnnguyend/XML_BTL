@@ -8,12 +8,12 @@
 	<!ATTLIST KhachHang MaK ID #REQUIRED>
 ]>
 <QLKH>
-  <KhachHang MaK="MK01">
+  <KhachHang MaK="KH01">
     <tenKhach>Tran Tuan Anh</tenKhach>
     <SDT>0123456789</SDT>
     <diaChi>Bac Giang</diaChi>
   </KhachHang>
-  <KhachHang MaK="MK02">
+  <KhachHang MaK="kH02">
     <tenKhach>Tran Tuan Anh</tenKhach>
     <SDT>0123456789</SDT>
     <diaChi>Luong Phong</diaChi>
