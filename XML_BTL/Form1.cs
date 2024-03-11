@@ -39,6 +39,7 @@ namespace XML_BTL
                 dgv.Rows[index].Cells[3].Value = xn.SelectSingleNode("Gioitinh").InnerText;
                 dgv.Rows[index].Cells[4].Value = xn.SelectSingleNode("Namsinh").InnerText;
                 dgv.Rows[index].Cells[5].Value = xn.SelectSingleNode("Sdt").InnerText;
+                dgv.Rows[index].Cells[6].Value = xn.SelectSingleNode("Password").InnerText;
                 index++;
             }
         }
@@ -76,6 +77,10 @@ namespace XML_BTL
             sdt.InnerText = txtSdtnv.Text;
             nhanvien.AppendChild(sdt);
 
+            XmlElement password = doc.CreateElement("Password");
+            password.InnerText = txtPw.Text;
+            nhanvien.AppendChild(password);
+
             root_nv.AppendChild(nhanvien);
             doc.Save(fileName);
             nv_dataGridView1.Rows.Clear();
@@ -98,6 +103,7 @@ namespace XML_BTL
             txtGioitinhnv.Text = nv_dataGridView1.Rows[id].Cells[3].Value.ToString();
             txtNamsinhnv.Text = nv_dataGridView1.Rows[id].Cells[4].Value.ToString();
             txtSdtnv.Text = nv_dataGridView1.Rows[id].Cells[5].Value.ToString();
+            txtPw.Text = nv_dataGridView1.Rows[id].Cells[6].Value.ToString();
         }
 
         private void btn_suanv_Click(object sender, EventArgs e)
@@ -132,6 +138,10 @@ namespace XML_BTL
                 XmlElement sdt = doc.CreateElement("Sdt");
                 sdt.InnerText = txtSdtnv.Text;
                 nhanvienmoi.AppendChild(sdt);
+
+                XmlElement password = doc.CreateElement("Password");
+                password.InnerText = txtPw.Text;
+                nhanvienmoi.AppendChild(password);
 
                 root_nv.ReplaceChild(nhanvienmoi, nhanviencu);
                 doc.Save(fileName);

@@ -17,45 +17,75 @@ namespace XML_BTL
     public partial class Form2 : Form
 
     {
-        private readonly string fileName = "XMLFile1.xml";
         public Form2()
         {
             InitializeComponent();
         }
-        
+       
 
 
         private void btn_dangnhap_Click(object sender, EventArgs e)
         {
-            string username = txtName.Text;
-            string password = txtPass.Text;
+            string Username = txtName.Text;
+            string Password = txtPass.Text;
 
-            if (ktra(username, password))
+            if (ktra(Username, Password))
             {
                 Form1 form1 = new Form1();
                 form1.Show();
 
 
             }
+            
             else
             {
                 MessageBox.Show("Đăng nhập thất bại. Vui lòng kiểm tra tên đăng nhập và mật khẩu.");
             }
         }
 
-        private bool ktra(string username, string password)
+
+        static bool ktra(string username, string password)
         {
-            XDocument doc = XDocument.Load(fileName);
+            XmlDocument doc = new XmlDocument();
+            XmlElement root_nv;
 
-            var user = doc.Descendants("User")
-                          .FirstOrDefault(u => u.Element("Username").Value == username &&
-                                               u.Element("Password").Value == password);
+            string fileName = @"C:\Học Tập\XML\XML_BTL\XML_BTL\QLnhanvien.xml";
+            doc.Load(fileName);
+            root_nv = doc.DocumentElement;
 
-            return user != null;
+            foreach (XmlNode nhanVien in root_nv.SelectNodes("//Nhanvien"))
+            {
+                string storedUsername = nhanVien.SelectSingleNode("@MaNV").InnerText;
+                string storedPassword = nhanVien.SelectSingleNode("Password").InnerText;
+
+                // Kiểm tra xem username và password có khớp hay không
+                if (username == storedUsername && password == storedPassword)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        static string getmanv(string Username)
+        {
+            XmlDocument doc = new XmlDocument();
+            XmlElement root_nv;
+
+            string fileName = @"C:\Học Tập\XML\XML_BTL\XML_BTL\QLnhanvien.xml";
+            doc.Load(fileName);
+            root_nv = doc.DocumentElement;
+
+            // Tìm employeeNode chứa username tương ứng
+            XmlNode employeeNode = root_nv.SelectSingleNode($"//Nhanvien[MaNV='{Username}']");
+            return employeeNode.SelectSingleNode("@MaNV").InnerText;
         }
     }
 
-
 }
+
+
+
       
 

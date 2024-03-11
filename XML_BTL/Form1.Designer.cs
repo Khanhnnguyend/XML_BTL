@@ -40,12 +40,6 @@
             this.btn_suanv = new System.Windows.Forms.Button();
             this.btn_themnv = new System.Windows.Forms.Button();
             this.nv_dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Hoten = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Diachi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Gioitinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Namsinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtSdtnv = new System.Windows.Forms.TextBox();
             this.nv_label6 = new System.Windows.Forms.Label();
             this.txtNamsinhnv = new System.Windows.Forms.TextBox();
@@ -58,6 +52,15 @@
             this.nv_label2 = new System.Windows.Forms.Label();
             this.txtManv = new System.Windows.Forms.TextBox();
             this.nv_label1 = new System.Windows.Forms.Label();
+            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Hoten = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Diachi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gioitinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Namsinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtPw = new System.Windows.Forms.TextBox();
+            this.Passwordnv = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nv_dataGridView1)).BeginInit();
@@ -158,6 +161,8 @@
             // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.txtPw);
+            this.tabPage7.Controls.Add(this.Passwordnv);
             this.tabPage7.Controls.Add(this.btn_xoanv);
             this.tabPage7.Controls.Add(this.btn_suanv);
             this.tabPage7.Controls.Add(this.btn_themnv);
@@ -184,7 +189,7 @@
             // 
             // btn_xoanv
             // 
-            this.btn_xoanv.Location = new System.Drawing.Point(437, 129);
+            this.btn_xoanv.Location = new System.Drawing.Point(483, 110);
             this.btn_xoanv.Name = "btn_xoanv";
             this.btn_xoanv.Size = new System.Drawing.Size(75, 23);
             this.btn_xoanv.TabIndex = 15;
@@ -194,7 +199,7 @@
             // 
             // btn_suanv
             // 
-            this.btn_suanv.Location = new System.Drawing.Point(266, 129);
+            this.btn_suanv.Location = new System.Drawing.Point(385, 110);
             this.btn_suanv.Name = "btn_suanv";
             this.btn_suanv.Size = new System.Drawing.Size(75, 23);
             this.btn_suanv.TabIndex = 14;
@@ -204,7 +209,7 @@
             // 
             // btn_themnv
             // 
-            this.btn_themnv.Location = new System.Drawing.Point(86, 129);
+            this.btn_themnv.Location = new System.Drawing.Point(285, 110);
             this.btn_themnv.Name = "btn_themnv";
             this.btn_themnv.Size = new System.Drawing.Size(75, 23);
             this.btn_themnv.TabIndex = 13;
@@ -222,46 +227,17 @@
             this.Diachi,
             this.Gioitinh,
             this.Namsinh,
-            this.Sdt});
+            this.Sdt,
+            this.Password});
             this.nv_dataGridView1.Location = new System.Drawing.Point(0, 187);
             this.nv_dataGridView1.Name = "nv_dataGridView1";
             this.nv_dataGridView1.Size = new System.Drawing.Size(617, 150);
             this.nv_dataGridView1.TabIndex = 12;
             this.nv_dataGridView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.nv_dataGridView1_MouseClick);
             // 
-            // MaNV
-            // 
-            this.MaNV.HeaderText = "MaNV";
-            this.MaNV.Name = "MaNV";
-            // 
-            // Hoten
-            // 
-            this.Hoten.HeaderText = "Ho ten";
-            this.Hoten.Name = "Hoten";
-            // 
-            // Diachi
-            // 
-            this.Diachi.HeaderText = "Dia chi";
-            this.Diachi.Name = "Diachi";
-            // 
-            // Gioitinh
-            // 
-            this.Gioitinh.HeaderText = "Gioi tinh";
-            this.Gioitinh.Name = "Gioitinh";
-            // 
-            // Namsinh
-            // 
-            this.Namsinh.HeaderText = "Nam sinh";
-            this.Namsinh.Name = "Namsinh";
-            // 
-            // Sdt
-            // 
-            this.Sdt.HeaderText = "Sdt";
-            this.Sdt.Name = "Sdt";
-            // 
             // txtSdtnv
             // 
-            this.txtSdtnv.Location = new System.Drawing.Point(493, 83);
+            this.txtSdtnv.Location = new System.Drawing.Point(493, 66);
             this.txtSdtnv.Name = "txtSdtnv";
             this.txtSdtnv.Size = new System.Drawing.Size(100, 19);
             this.txtSdtnv.TabIndex = 11;
@@ -269,7 +245,7 @@
             // nv_label6
             // 
             this.nv_label6.AutoSize = true;
-            this.nv_label6.Location = new System.Drawing.Point(434, 86);
+            this.nv_label6.Location = new System.Drawing.Point(434, 69);
             this.nv_label6.Name = "nv_label6";
             this.nv_label6.Size = new System.Drawing.Size(26, 13);
             this.nv_label6.TabIndex = 10;
@@ -277,7 +253,7 @@
             // 
             // txtNamsinhnv
             // 
-            this.txtNamsinhnv.Location = new System.Drawing.Point(287, 83);
+            this.txtNamsinhnv.Location = new System.Drawing.Point(287, 66);
             this.txtNamsinhnv.Name = "txtNamsinhnv";
             this.txtNamsinhnv.Size = new System.Drawing.Size(100, 19);
             this.txtNamsinhnv.TabIndex = 9;
@@ -285,7 +261,7 @@
             // nv_label5
             // 
             this.nv_label5.AutoSize = true;
-            this.nv_label5.Location = new System.Drawing.Point(228, 86);
+            this.nv_label5.Location = new System.Drawing.Point(228, 69);
             this.nv_label5.Name = "nv_label5";
             this.nv_label5.Size = new System.Drawing.Size(59, 13);
             this.nv_label5.TabIndex = 8;
@@ -293,7 +269,7 @@
             // 
             // txtGioitinhnv
             // 
-            this.txtGioitinhnv.Location = new System.Drawing.Point(86, 83);
+            this.txtGioitinhnv.Location = new System.Drawing.Point(86, 66);
             this.txtGioitinhnv.Name = "txtGioitinhnv";
             this.txtGioitinhnv.Size = new System.Drawing.Size(100, 19);
             this.txtGioitinhnv.TabIndex = 7;
@@ -301,7 +277,7 @@
             // nv_label4
             // 
             this.nv_label4.AutoSize = true;
-            this.nv_label4.Location = new System.Drawing.Point(27, 86);
+            this.nv_label4.Location = new System.Drawing.Point(27, 69);
             this.nv_label4.Name = "nv_label4";
             this.nv_label4.Size = new System.Drawing.Size(54, 13);
             this.nv_label4.TabIndex = 6;
@@ -355,6 +331,57 @@
             this.nv_label1.TabIndex = 0;
             this.nv_label1.Text = "MaNV";
             // 
+            // MaNV
+            // 
+            this.MaNV.HeaderText = "MaNV";
+            this.MaNV.Name = "MaNV";
+            // 
+            // Hoten
+            // 
+            this.Hoten.HeaderText = "Ho ten";
+            this.Hoten.Name = "Hoten";
+            // 
+            // Diachi
+            // 
+            this.Diachi.HeaderText = "Dia chi";
+            this.Diachi.Name = "Diachi";
+            // 
+            // Gioitinh
+            // 
+            this.Gioitinh.HeaderText = "Gioi tinh";
+            this.Gioitinh.Name = "Gioitinh";
+            // 
+            // Namsinh
+            // 
+            this.Namsinh.HeaderText = "Nam sinh";
+            this.Namsinh.Name = "Namsinh";
+            // 
+            // Sdt
+            // 
+            this.Sdt.HeaderText = "Sdt";
+            this.Sdt.Name = "Sdt";
+            // 
+            // Password
+            // 
+            this.Password.HeaderText = "Password";
+            this.Password.Name = "Password";
+            // 
+            // txtPw
+            // 
+            this.txtPw.Location = new System.Drawing.Point(86, 107);
+            this.txtPw.Name = "txtPw";
+            this.txtPw.Size = new System.Drawing.Size(100, 19);
+            this.txtPw.TabIndex = 17;
+            // 
+            // Passwordnv
+            // 
+            this.Passwordnv.AutoSize = true;
+            this.Passwordnv.Location = new System.Drawing.Point(19, 110);
+            this.Passwordnv.Name = "Passwordnv";
+            this.Passwordnv.Size = new System.Drawing.Size(61, 13);
+            this.Passwordnv.TabIndex = 16;
+            this.Passwordnv.Text = "Password";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -397,14 +424,17 @@
         private System.Windows.Forms.Label nv_label3;
         private System.Windows.Forms.TextBox txtHotennv;
         private System.Windows.Forms.Label nv_label2;
+        private System.Windows.Forms.Button btn_xoanv;
+        private System.Windows.Forms.Button btn_suanv;
+        private System.Windows.Forms.Button btn_themnv;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaNV;
         private System.Windows.Forms.DataGridViewTextBoxColumn Hoten;
         private System.Windows.Forms.DataGridViewTextBoxColumn Diachi;
         private System.Windows.Forms.DataGridViewTextBoxColumn Gioitinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn Namsinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn Sdt;
-        private System.Windows.Forms.Button btn_xoanv;
-        private System.Windows.Forms.Button btn_suanv;
-        private System.Windows.Forms.Button btn_themnv;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Password;
+        private System.Windows.Forms.TextBox txtPw;
+        private System.Windows.Forms.Label Passwordnv;
     }
 }

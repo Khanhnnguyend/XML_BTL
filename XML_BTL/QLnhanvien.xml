@@ -7,6 +7,7 @@
     <Gioitinh>nam</Gioitinh>
     <Namsinh>2002</Namsinh>
     <Sdt>023244</Sdt>
+	<Password>123</Password>
   </Nhanvien>
   <Nhanvien MaNV="NV03">
     <Hoten>HUy</Hoten>
@@ -14,5 +15,6 @@
     <Gioitinh>nam</Gioitinh>
     <Namsinh>2002</Namsinh>
     <Sdt>20405530</Sdt>
+	<Password>123</Password>
   </Nhanvien>
 </QLNV>
